@@ -108,6 +108,18 @@ const UNIVERSAL: Bank = {
     { en: "a footstep", jp: "足音" },
     { en: "an eyelid", jp: "まぶた" },
     { en: "a wrist", jp: "手首" },
+    // states of mind, spoken around rather than named
+    { en: "a walking sleep", jp: "歩く眠り" },
+    { en: "a missing hour", jp: "失われた一時間" },
+    // butoh / gagaku / zen / abstract art
+    { en: "a fermata", jp: "延音記号" },
+    { en: "a raked garden", jp: "砂紋の庭" },
+    { en: "an empty bowl", jp: "空の器" },
+    { en: "a palimpsest", jp: "上書きされた羊皮紙" },
+    { en: "a whitened body", jp: "白塗りの体" },
+    { en: "a slow gesture", jp: "ゆるやかな身振り" },
+    { en: "a paper screen", jp: "紙の衝立" },
+    { en: "a court flute", jp: "篳篥" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -144,6 +156,22 @@ const UNIVERSAL: Bank = {
     { en: "warmth", jp: "温もり" },
     { en: "fatigue", jp: "疲労" },
     { en: "balance", jp: "均衡" },
+    // modern coinages with staying power
+    { en: "sonder", jp: "他者の人生への気づき" },
+    { en: "solastalgia", jp: "失われゆく風景への郷愁" },
+    { en: "touch starvation", jp: "触れ合いへの飢え" },
+    // states of mind, spoken around rather than named
+    { en: "a leaving of the self", jp: "自己からの離脱" },
+    { en: "the flatness", jp: "平板さ" },
+    { en: "sleepless watching", jp: "眠らぬ見張り" },
+    { en: "an unbidden flight", jp: "呼ばれざる逃走" },
+    // butoh / gagaku / zen / abstract art
+    { en: "the interval", jp: "間" },
+    { en: "impermanence", jp: "無常" },
+    { en: "wabi-sabi", jp: "侘寂" },
+    { en: "negative space", jp: "余白" },
+    { en: "automatism", jp: "自動筆記" },
+    { en: "an afterimage", jp: "残像" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -211,6 +239,13 @@ const UNIVERSAL: Bank = {
     { en: "stretches", jp: "伸びをする" },
     { en: "shivers", jp: "身震いする" },
     { en: "stumbles", jp: "よろめく" },
+    // states of mind, spoken around rather than named
+    { en: "steps outside itself", jp: "自分の外へ踏み出す" },
+    { en: "runs toward the open", jp: "開けた場所へ走り出す" },
+    { en: "goes still inside", jp: "内側で静まり返る" },
+    // butoh / gagaku / zen / abstract art
+    { en: "bows", jp: "礼をする" },
+    { en: "holds still", jp: "静止したままでいる" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -239,6 +274,14 @@ const UNIVERSAL: Bank = {
     { en: "embraces", jp: "抱きしめる" },
     { en: "cradles", jp: "抱える" },
     { en: "releases", jp: "解き放つ" },
+    // modern
+    { en: "ghosts", jp: "音信を絶つ" },
+    { en: "gaslights", jp: "偽りの現実を信じ込ませる" },
+    { en: "triggers", jp: "引き起こす" },
+    // butoh / gagaku / zen / abstract art
+    { en: "suspends", jp: "宙吊りにする" },
+    { en: "erases", jp: "消し去る" },
+    { en: "frames", jp: "縁取る" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -322,6 +365,25 @@ const UNIVERSAL: Bank = {
     { en: "smoky", jp: "煙たい" },
     { en: "earthy", jp: "土の匂いのする" },
     { en: "pungent", jp: "鼻を突く" },
+    // modern
+    { en: "liminal", jp: "境界的な" },
+    { en: "unhinged", jp: "箍が外れた" },
+    { en: "feral", jp: "野生に還った" },
+    { en: "unbothered", jp: "動じない" },
+    { en: "parasocial", jp: "一方的に親密な" },
+    // states of mind, spoken around rather than named
+    { en: "disembodied", jp: "身体感覚を失った" },
+    { en: "untethered", jp: "繋がりを失った" },
+    { en: "unmoored", jp: "係留を失った" },
+    { en: "wide-eyed", jp: "見開いた目の" },
+    { en: "stone-still", jp: "石のように動かない" },
+    { en: "sleepwalking", jp: "夢遊病の" },
+    // butoh / gagaku / zen / abstract art
+    { en: "suspended", jp: "宙吊りの" },
+    { en: "unhurried", jp: "急がない" },
+    { en: "monochrome", jp: "単色の" },
+    { en: "gestural", jp: "身振りの" },
+    { en: "impermanent", jp: "無常の" },
   ],
 };
 
@@ -340,6 +402,7 @@ const SPECIAL: Word[] = [
   { en: "right now", jp: "いま" },
   { en: "the cosmos", jp: "宇宙" },
   { en: "the horizon", jp: "地平線" },
+  { en: "the cloud", jp: "クラウド" },
 ];
 
 // The associative worlds — one wide field per planted seed. Keyed by the
@@ -387,6 +450,9 @@ const WORLDS: Record<string, Bank> = {
       // body
       { en: "a scrolling thumb", jp: "スクロールする親指" },
       { en: "a hunched back", jp: "丸まった背中" },
+      // modern
+      { en: "a burner phone", jp: "使い捨て携帯" },
+      { en: "an incognito tab", jp: "シークレットタブ" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -410,6 +476,11 @@ const WORLDS: Record<string, Bank> = {
       { en: "latency", jp: "遅延" },
       // body
       { en: "eye strain", jp: "眼精疲労" },
+      // modern
+      { en: "the cloud", jp: "クラウド" },
+      { en: "autopilot", jp: "自動操縦" },
+      // states of mind, spoken around rather than named
+      { en: "sleepless watching", jp: "眠らぬ見張り" },
     ],
     material: [
       { en: "neon", jp: "ネオン" },
@@ -446,6 +517,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "trends", jp: "話題になる" },
       { en: "lags", jp: "遅延する" },
       { en: "swelters", jp: "うだるように暑くなる" },
+      { en: "doomscrolls", jp: "延々とスクロールし続ける" },
     ],
     verbTrans: [
       { en: "devours", jp: "貪る" },
@@ -462,6 +534,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "streams", jp: "配信する" },
       { en: "curates", jp: "選び集める" },
       { en: "amplifies", jp: "増幅する" },
+      { en: "ghosts", jp: "音信を絶つ" },
+      { en: "gaslights", jp: "偽りの現実を信じ込ませる" },
     ],
     adj: [
       { en: "sleepless", jp: "眠らない" },
@@ -491,6 +565,13 @@ const WORLDS: Record<string, Bank> = {
       // senses (sight / hearing)
       { en: "glaring", jp: "まぶしい" },
       { en: "screeching", jp: "きしむ音を立てる" },
+      // modern
+      { en: "checked-out", jp: "心ここにあらずの" },
+      { en: "running on fumes", jp: "ガス欠寸前の" },
+      { en: "unhinged", jp: "箍が外れた" },
+      // states of mind, spoken around rather than named
+      { en: "wide-eyed", jp: "見開いた目の" },
+      { en: "vacant", jp: "うつろな" },
     ],
   },
   // 鏡と閾 — reflection, doubling, doorways, the liminal.
@@ -532,6 +613,8 @@ const WORLDS: Record<string, Bank> = {
       // body
       { en: "an outstretched hand", jp: "差し伸べた手" },
       { en: "a raised palm", jp: "上げた掌" },
+      // psychological states
+      { en: "a blank stare", jp: "虚ろな眼差し" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -555,6 +638,15 @@ const WORLDS: Record<string, Bank> = {
       { en: "twilight", jp: "薄明かり" },
       // body
       { en: "muscle memory", jp: "体の記憶" },
+      // modern
+      { en: "sonder", jp: "他者の人生への気づき" },
+      // states of mind, spoken around rather than named
+      { en: "a leaving of the self", jp: "自己からの離脱" },
+      { en: "a stranger in the mirror", jp: "鏡の中の見知らぬ人" },
+      { en: "an unreal hour", jp: "現実感のない時間" },
+      // zen / abstract art
+      { en: "negative space", jp: "余白" },
+      { en: "an afterimage", jp: "残像" },
     ],
     material: [
       { en: "glass", jp: "硝子" },
@@ -627,6 +719,12 @@ const WORLDS: Record<string, Bank> = {
       // senses (sight)
       { en: "hazy", jp: "霞んだ" },
       { en: "murky", jp: "濁った" },
+      // modern
+      { en: "liminal", jp: "境界的な" },
+      { en: "parasocial", jp: "一方的に親密な" },
+      // states of mind, spoken around rather than named
+      { en: "disembodied", jp: "身体感覚を失った" },
+      { en: "stone-still", jp: "石のように動かない" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -667,6 +765,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a distant storm", jp: "遠い嵐" },
       // body
       { en: "a cupped ear", jp: "耳を澄ます手" },
+      // gagaku / ma
+      { en: "a fermata", jp: "延音記号" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -731,6 +831,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "loses", jp: "見失う" },
       { en: "repeats", jp: "繰り返す" },
       { en: "interrupts", jp: "遮る" },
+      { en: "ghosts", jp: "音信を絶つ" },
     ],
     adj: [
       { en: "faint", jp: "かすかな" },
@@ -754,6 +855,8 @@ const WORLDS: Record<string, Bank> = {
       // senses (hearing)
       { en: "muffled", jp: "くぐもった" },
       { en: "crackling", jp: "ぱちぱちと鳴る" },
+      // modern
+      { en: "parasocial", jp: "一方的に親密な" },
     ],
   },
   // 灰と種 — fire, soil, dormancy, the orchard's slow cycle.
@@ -814,6 +917,11 @@ const WORLDS: Record<string, Bank> = {
       { en: "the thaw", jp: "雪解け" },
       // body
       { en: "weariness", jp: "疲れ" },
+      // modern
+      { en: "solastalgia", jp: "失われゆく風景への郷愁" },
+      // zen
+      { en: "impermanence", jp: "無常" },
+      { en: "wabi-sabi", jp: "侘寂" },
     ],
     material: [
       { en: "ash", jp: "灰" },
@@ -894,9 +1002,20 @@ const chance = (p: number) => Math.random() < p;
 // "a" / "an" by the leading sound of the following word.
 const art = (en: string) => (/^[aeiou]/i.test(en) ? "an" : "a");
 
+// Verbs whose 3rd-person "-es" isn't a plain "+s" (buzz → buzzes, not
+// buzze) — stripping just the trailing "s" would mangle these, and the
+// suffix alone can't disambiguate them from silent-e verbs like "ache"
+// (ache + s = aches), so they're listed explicitly.
+const IRREGULAR_ES: Record<string, string> = {
+  buzzes: "buzz",
+  glitches: "glitch",
+  refreshes: "refresh",
+  stretches: "stretch",
+};
+
 // Bare-infinitive form of an intransitive verb (the bank stores the
 // 3rd-person "-s" form) for templates like "forgets to ___".
-const baseOf = (en: string) => en.replace(/s$/, "");
+const baseOf = (en: string) => IRREGULAR_ES[en] ?? en.replace(/s$/, "");
 
 // Strip a leading article so a template can supply its own determiner
 // without doubling up ("a beacon" → "beacon" → "an old beacon").
