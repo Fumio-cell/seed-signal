@@ -92,6 +92,22 @@ const UNIVERSAL: Bank = {
     // science
     { en: "telescope", jp: "望遠鏡" },
     { en: "microscope", jp: "顕微鏡" },
+    // weather
+    { en: "a thunderstorm", jp: "雷雨" },
+    { en: "a rainbow", jp: "虹" },
+    { en: "a raincloud", jp: "雨雲" },
+    { en: "a snowdrift", jp: "雪の吹き溜まり" },
+    { en: "a heat wave", jp: "熱波" },
+    { en: "a cold front", jp: "寒冷前線" },
+    // body / gesture
+    { en: "a heartbeat", jp: "鼓動" },
+    { en: "a fingertip", jp: "指先" },
+    { en: "a shoulder", jp: "肩" },
+    { en: "an open palm", jp: "開いた掌" },
+    { en: "a closed fist", jp: "握られた拳" },
+    { en: "a footstep", jp: "足音" },
+    { en: "an eyelid", jp: "まぶた" },
+    { en: "a wrist", jp: "手首" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -119,6 +135,15 @@ const UNIVERSAL: Bank = {
     { en: "dissonance", jp: "不協和音" },
     { en: "rhythm", jp: "リズム" },
     { en: "cadence", jp: "韻律" },
+    // weather
+    { en: "humidity", jp: "湿気" },
+    { en: "drought", jp: "干ばつ" },
+    { en: "the forecast", jp: "予報" },
+    // body
+    { en: "breath", jp: "息" },
+    { en: "warmth", jp: "温もり" },
+    { en: "fatigue", jp: "疲労" },
+    { en: "balance", jp: "均衡" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -144,6 +169,14 @@ const UNIVERSAL: Bank = {
     // art
     { en: "pigment", jp: "顔料" },
     { en: "graphite", jp: "黒鉛" },
+    // weather
+    { en: "hail", jp: "雹" },
+    { en: "sleet", jp: "みぞれ" },
+    { en: "lightning", jp: "稲妻" },
+    { en: "haze", jp: "霞" },
+    // body
+    { en: "sweat", jp: "汗" },
+    { en: "tears", jp: "涙" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -169,6 +202,15 @@ const UNIVERSAL: Bank = {
     { en: "evaporates", jp: "蒸発する" },
     // music
     { en: "harmonizes", jp: "調和する" },
+    // weather
+    { en: "thunders", jp: "雷鳴が轟く" },
+    { en: "clears up", jp: "晴れる" },
+    { en: "clouds over", jp: "曇る" },
+    // body
+    { en: "trembles", jp: "ふるえる" },
+    { en: "stretches", jp: "伸びをする" },
+    { en: "shivers", jp: "身震いする" },
+    { en: "stumbles", jp: "よろめく" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -190,6 +232,13 @@ const UNIVERSAL: Bank = {
     { en: "calibrates", jp: "較正する" },
     { en: "illuminates", jp: "照らす" },
     { en: "orchestrates", jp: "編成する" },
+    // weather
+    { en: "soaks", jp: "びしょ濡れにする" },
+    { en: "chills", jp: "冷やす" },
+    // body
+    { en: "embraces", jp: "抱きしめる" },
+    { en: "cradles", jp: "抱える" },
+    { en: "releases", jp: "解き放つ" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -223,6 +272,56 @@ const UNIVERSAL: Bank = {
     // music
     { en: "dissonant", jp: "不協和な" },
     { en: "harmonic", jp: "調和的な" },
+    // weather
+    { en: "overcast", jp: "曇った" },
+    { en: "windswept", jp: "風にさらされた" },
+    { en: "humid", jp: "湿った" },
+    { en: "frostbitten", jp: "凍傷を負った" },
+    // body
+    { en: "trembling", jp: "ふるえる" },
+    { en: "weary", jp: "疲れきった" },
+    { en: "barefoot", jp: "裸足の" },
+    { en: "breathless", jp: "息を切らした" },
+    // sight
+    { en: "vivid", jp: "鮮やかな" },
+    { en: "hazy", jp: "霞んだ" },
+    { en: "glaring", jp: "まぶしい" },
+    { en: "dim", jp: "薄暗い" },
+    { en: "shimmering", jp: "きらめく" },
+    { en: "gleaming", jp: "光り輝く" },
+    { en: "murky", jp: "濁った" },
+    { en: "radiant", jp: "光り輝く" },
+    // hearing
+    { en: "shrill", jp: "甲高い" },
+    { en: "muffled", jp: "くぐもった" },
+    { en: "resonant", jp: "響き渡る" },
+    { en: "deafening", jp: "耳をつんざく" },
+    { en: "tinny", jp: "金属的に響く" },
+    { en: "booming", jp: "轟く" },
+    { en: "ringing", jp: "鳴り響く" },
+    // touch
+    { en: "rough", jp: "ざらついた" },
+    { en: "smooth", jp: "滑らかな" },
+    { en: "velvety", jp: "ビロードのような" },
+    { en: "brittle", jp: "脆い" },
+    { en: "sticky", jp: "べたつく" },
+    { en: "silky", jp: "絹のような" },
+    { en: "damp", jp: "湿った" },
+    { en: "prickly", jp: "ちくちくする" },
+    // taste
+    { en: "bitter", jp: "苦い" },
+    { en: "sweet", jp: "甘い" },
+    { en: "sour", jp: "酸っぱい" },
+    { en: "tangy", jp: "つんとした酸味の" },
+    { en: "bland", jp: "味気ない" },
+    { en: "metallic", jp: "金属的な" },
+    // smell
+    { en: "fragrant", jp: "香り高い" },
+    { en: "musty", jp: "かび臭い" },
+    { en: "acrid", jp: "刺激臭のある" },
+    { en: "smoky", jp: "煙たい" },
+    { en: "earthy", jp: "土の匂いのする" },
+    { en: "pungent", jp: "鼻を突く" },
   ],
 };
 
@@ -282,6 +381,12 @@ const WORLDS: Record<string, Bank> = {
       { en: "graffiti", jp: "落書き" },
       { en: "a jumbotron", jp: "大型ビジョン" },
       { en: "a rooftop garden", jp: "屋上庭園" },
+      // weather (urban)
+      { en: "a rain-slicked street", jp: "雨に濡れた通り" },
+      { en: "a heat shimmer", jp: "陽炎" },
+      // body
+      { en: "a scrolling thumb", jp: "スクロールする親指" },
+      { en: "a hunched back", jp: "丸まった背中" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -303,6 +408,8 @@ const WORLDS: Record<string, Bank> = {
       // science
       { en: "bandwidth", jp: "帯域" },
       { en: "latency", jp: "遅延" },
+      // body
+      { en: "eye strain", jp: "眼精疲労" },
     ],
     material: [
       { en: "neon", jp: "ネオン" },
@@ -338,6 +445,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "multitasks", jp: "並行処理する" },
       { en: "trends", jp: "話題になる" },
       { en: "lags", jp: "遅延する" },
+      { en: "swelters", jp: "うだるように暑くなる" },
     ],
     verbTrans: [
       { en: "devours", jp: "貪る" },
@@ -374,6 +482,15 @@ const WORLDS: Record<string, Bank> = {
       { en: "magenta", jp: "赤紫色の" },
       { en: "cyan", jp: "シアン色の" },
       { en: "pixelated", jp: "ピクセル化した" },
+      // weather
+      { en: "muggy", jp: "蒸し暑い" },
+      { en: "sweltering", jp: "うだるように暑い" },
+      // body
+      { en: "hunched", jp: "前かがみの" },
+      { en: "glued", jp: "釘付けの" },
+      // senses (sight / hearing)
+      { en: "glaring", jp: "まぶしい" },
+      { en: "screeching", jp: "きしむ音を立てる" },
     ],
   },
   // 鏡と閾 — reflection, doubling, doorways, the liminal.
@@ -409,6 +526,12 @@ const WORLDS: Record<string, Bank> = {
       { en: "a self-portrait", jp: "自画像" },
       { en: "a study", jp: "習作" },
       { en: "a crescent moon", jp: "三日月" },
+      // weather
+      { en: "a fogged window", jp: "曇った窓" },
+      { en: "frostwork", jp: "霜の模様" },
+      // body
+      { en: "an outstretched hand", jp: "差し伸べた手" },
+      { en: "a raised palm", jp: "上げた掌" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -428,6 +551,10 @@ const WORLDS: Record<string, Bank> = {
       // science
       { en: "déjà vu", jp: "既視感" },
       { en: "parallax", jp: "視差" },
+      // weather
+      { en: "twilight", jp: "薄明かり" },
+      // body
+      { en: "muscle memory", jp: "体の記憶" },
     ],
     material: [
       { en: "glass", jp: "硝子" },
@@ -477,6 +604,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "questions", jp: "問いただす" },
       { en: "returns", jp: "返す" },
       { en: "sketches", jp: "描く" },
+      { en: "reaches for", jp: "手を伸ばす" },
     ],
     adj: [
       { en: "silvered", jp: "銀めっきの" },
@@ -496,6 +624,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "pearlescent", jp: "真珠光沢の" },
       { en: "translucent", jp: "半透明の" },
       { en: "iridescent", jp: "玉虫色の" },
+      // senses (sight)
+      { en: "hazy", jp: "霞んだ" },
+      { en: "murky", jp: "濁った" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -531,6 +662,11 @@ const WORLDS: Record<string, Bank> = {
       { en: "a migratory bird", jp: "渡り鳥" },
       { en: "whale song", jp: "鯨の歌" },
       { en: "a foghorn", jp: "霧笛" },
+      // weather
+      { en: "a lightning strike", jp: "落雷" },
+      { en: "a distant storm", jp: "遠い嵐" },
+      // body
+      { en: "a cupped ear", jp: "耳を澄ます手" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -548,6 +684,8 @@ const WORLDS: Record<string, Bank> = {
       // science
       { en: "bandwidth", jp: "帯域" },
       { en: "frequency drift", jp: "周波数のずれ" },
+      // body
+      { en: "breathlessness", jp: "息を切らすこと" },
     ],
     material: [
       { en: "static", jp: "静電気" },
@@ -579,6 +717,8 @@ const WORLDS: Record<string, Bank> = {
       // nature
       { en: "chirps", jp: "さえずる" },
       { en: "calls back", jp: "呼び返す" },
+      // body
+      { en: "strains to hear", jp: "聞き取ろうと耳を澄ます" },
     ],
     verbTrans: [
       { en: "carries", jp: "運ぶ" },
@@ -608,6 +748,12 @@ const WORLDS: Record<string, Bank> = {
       // science
       { en: "cosmic", jp: "宇宙的な" },
       { en: "migratory", jp: "渡りの" },
+      // weather
+      { en: "stormy", jp: "嵐の" },
+      { en: "windblown", jp: "風に吹かれた" },
+      // senses (hearing)
+      { en: "muffled", jp: "くぐもった" },
+      { en: "crackling", jp: "ぱちぱちと鳴る" },
     ],
   },
   // 灰と種 — fire, soil, dormancy, the orchard's slow cycle.
@@ -641,6 +787,11 @@ const WORLDS: Record<string, Bank> = {
       { en: "a still life", jp: "静物画" },
       { en: "a woodcut", jp: "木版画" },
       { en: "a chrysalis", jp: "蛹" },
+      // weather
+      { en: "an autumn wind", jp: "秋風" },
+      { en: "the first frost", jp: "初霜" },
+      // body
+      { en: "a calloused palm", jp: "たこのできた掌" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -659,6 +810,10 @@ const WORLDS: Record<string, Bank> = {
       // science (botany)
       { en: "germination", jp: "発芽" },
       { en: "pollination", jp: "受粉" },
+      // weather
+      { en: "the thaw", jp: "雪解け" },
+      // body
+      { en: "weariness", jp: "疲れ" },
     ],
     material: [
       { en: "ash", jp: "灰" },
@@ -688,6 +843,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "blooms", jp: "咲く" },
       { en: "decomposes", jp: "分解する" },
       { en: "germinates", jp: "発芽する" },
+      { en: "grows tired", jp: "疲れる" },
     ],
     verbTrans: [
       { en: "scatters", jp: "散らす" },
@@ -718,6 +874,15 @@ const WORLDS: Record<string, Bank> = {
       // color
       { en: "russet", jp: "赤茶色の" },
       { en: "emerald", jp: "エメラルド色の" },
+      // weather
+      { en: "sun-baked", jp: "陽に焼けた" },
+      { en: "wind-bitten", jp: "風に晒された" },
+      // body
+      { en: "calloused", jp: "たこのできた" },
+      { en: "weathered", jp: "風雪に耐えた" },
+      // senses (touch / smell)
+      { en: "earthy", jp: "土の匂いのする" },
+      { en: "brittle", jp: "脆い" },
     ],
   },
 };
