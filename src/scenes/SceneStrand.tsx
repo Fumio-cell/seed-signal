@@ -6,7 +6,11 @@ import { startDrag, dropTargetAt } from "../lib/drag";
 import { fruitPluck } from "../audio/sfx";
 import { useSettings } from "../store/settings";
 import pomegranateOpen from "../assets/tree/pomegranate-open.jpg";
+import pomegranateWhole from "../assets/tree/pomegranate03-crop.png";
 import seedsStrand from "../assets/tree/seeds-strand.jpg";
+
+// Angles (in degrees) for the seeds that fly out when the fruit bursts.
+const BURST_ARILS = [-140, -110, -70, -40, -20, 20, 40, 70, 110, 140];
 
 // Break & Strand. Left: the broken fruit's word fragments. Right: three
 // line slots. Grammatical physics gives feedback on every join — gold for
@@ -58,6 +62,7 @@ export function SceneStrand({
   const [flash, setFlash] = useState<Flash | null>(null);
   const [pending, setPending] = useState<Pending | null>(null);
   const [dragActive, setDragActive] = useState(false);
+  const [burst, setBurst] = useState(0);
   const flashKey = useRef(0);
 
   const available = pool.filter((s) => !s.picked);
@@ -142,15 +147,32 @@ export function SceneStrand({
             </div>
           ))}
         </div>
-        <button
-          className="ghost-btn break-more"
-          onClick={() => {
-            fruitPluck();
-            onBreakAnother();
-          }}
-        >
-          break another fruit — もう一つ割る
-        </button>
+        <div className="break-more-wrap">
+          <span className={`pomegranate-charm ${burst ? "bursting" : ""}`} aria-hidden="true">
+            <img src={pomegranateWhole} alt="" />
+            {burst > 0 && (
+              <span key={burst} className="aril-burst">
+                {BURST_ARILS.map((deg, i) => (
+                  <span
+                    key={i}
+                    className="aril"
+                    style={{ "--deg": `${deg}deg` } as React.CSSProperties}
+                  />
+                ))}
+              </span>
+            )}
+          </span>
+          <button
+            className="ghost-btn break-more"
+            onClick={() => {
+              fruitPluck();
+              setBurst((n) => n + 1);
+              onBreakAnother();
+            }}
+          >
+            break another fruit — もう一つ割る
+          </button>
+        </div>
       </div>
 
       <div className="strand-col lines">

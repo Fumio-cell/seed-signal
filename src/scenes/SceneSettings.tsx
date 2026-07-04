@@ -33,6 +33,14 @@ function toPlainText(list: SealedHaiku[]): string {
     .join("\n");
 }
 
+// Name the surreality dial's current position for the slider label.
+function surrealityLabel(s: number): string {
+  if (s < 0.25) return "grounded 地に足";
+  if (s < 0.5) return "poetic 詩的";
+  if (s < 0.75) return "surreal 超現実";
+  return "dream-logic 夢の論理";
+}
+
 function downloadText(content: string, filename: string, mime: string): void {
   const blob = new Blob([content], { type: mime });
   const url = URL.createObjectURL(blob);
@@ -124,17 +132,6 @@ export function SceneSettings({ orchard, onDeleteWithered, onImported }: Props) 
             />
           </div>
           <div className="field-row">
-            <label>response sensitivity <span className="muted">(future audio-reactive visuals)</span></label>
-            <input
-              type="range"
-              min={0}
-              max={1}
-              step={0.01}
-              value={settings.sound.sensitivity}
-              onChange={(e) => set("sound", { sensitivity: Number(e.target.value) })}
-            />
-          </div>
-          <div className="field-row">
             <label>loop mode</label>
             <select
               value={settings.sound.loopMode}
@@ -161,17 +158,6 @@ export function SceneSettings({ orchard, onDeleteWithered, onImported }: Props) 
             />
           </div>
           <div className="field-row">
-            <label>fruit density</label>
-            <input
-              type="range"
-              min={0}
-              max={1}
-              step={0.05}
-              value={settings.growth.fruitDensity}
-              onChange={(e) => set("growth", { fruitDensity: Number(e.target.value) })}
-            />
-          </div>
-          <div className="field-row">
             <label>seeds per fruit — {settings.growth.seedsPerFruit}</label>
             <input
               type="range"
@@ -182,52 +168,10 @@ export function SceneSettings({ orchard, onDeleteWithered, onImported }: Props) 
               onChange={(e) => set("growth", { seedsPerFruit: Number(e.target.value) })}
             />
           </div>
-          <div className="field-row">
-            <label>ripening pattern</label>
-            <select
-              value={settings.growth.ripening}
-              onChange={(e) => set("growth", { ripening: e.target.value as typeof settings.growth.ripening })}
-            >
-              <option value="gradual">gradual</option>
-              <option value="all-at-once">all at once</option>
-              <option value="random">random</option>
-            </select>
-          </div>
-          <div className="field-row">
-            <label>auto-Japanese translation</label>
-            <input
-              type="checkbox"
-              checked={settings.growth.autoTranslate}
-              onChange={(e) => set("growth", { autoTranslate: e.target.checked })}
-            />
-          </div>
         </section>
 
         <section className="settings-section">
           <h3>Language <em>言葉</em></h3>
-          <div className="field-row">
-            <label>primary language</label>
-            <select
-              value={settings.language.primary}
-              onChange={(e) => set("language", { primary: e.target.value as typeof settings.language.primary })}
-            >
-              <option value="en">English</option>
-              <option value="jp">日本語</option>
-            </select>
-          </div>
-          <div className="field-row">
-            <label>translation style</label>
-            <select
-              value={settings.language.translationStyle}
-              onChange={(e) =>
-                set("language", { translationStyle: e.target.value as typeof settings.language.translationStyle })
-              }
-            >
-              <option value="literal">literal</option>
-              <option value="poetic">poetic</option>
-              <option value="both">both</option>
-            </select>
-          </div>
           <div className="field-row">
             <label>syllable rule</label>
             <select
@@ -241,41 +185,10 @@ export function SceneSettings({ orchard, onDeleteWithered, onImported }: Props) 
               <option value="free">free</option>
             </select>
           </div>
-          <div className="field-row">
-            <label>punctuation default</label>
-            <select
-              value={settings.language.punctuation}
-              onChange={(e) =>
-                set("language", { punctuation: e.target.value as typeof settings.language.punctuation })
-              }
-            >
-              <option value="none">none</option>
-              <option value="ask">ask each time</option>
-            </select>
-          </div>
         </section>
 
         <section className="settings-section">
           <h3>Grammar Physics <em>文法の物理</em></h3>
-          <div className="field-row">
-            <label>magnetic strength</label>
-            <input
-              type="range"
-              min={0}
-              max={1}
-              step={0.05}
-              value={settings.grammar.magneticStrength}
-              onChange={(e) => set("grammar", { magneticStrength: Number(e.target.value) })}
-            />
-          </div>
-          <div className="field-row">
-            <label>verb-count guardrail <span className="muted">(warn at 2+ verbs/line)</span></label>
-            <input
-              type="checkbox"
-              checked={settings.grammar.verbGuardrail}
-              onChange={(e) => set("grammar", { verbGuardrail: e.target.checked })}
-            />
-          </div>
           <div className="field-row">
             <label>allow risky joins</label>
             <input
@@ -298,6 +211,35 @@ export function SceneSettings({ orchard, onDeleteWithered, onImported }: Props) 
         </section>
 
         <section className="settings-section">
+          <h3>Vocabulary <em>言葉の生成</em></h3>
+          <div className="field-row">
+            <label>
+              generative fragments{" "}
+              <span className="muted">(compose fresh words each break)</span>
+            </label>
+            <input
+              type="checkbox"
+              checked={settings.vocabulary.generative}
+              onChange={(e) => set("vocabulary", { generative: e.target.checked })}
+            />
+          </div>
+          <div className="field-row">
+            <label>
+              surreality — {surrealityLabel(settings.vocabulary.surreality)}
+            </label>
+            <input
+              type="range"
+              min={0}
+              max={1}
+              step={0.05}
+              value={settings.vocabulary.surreality}
+              disabled={!settings.vocabulary.generative}
+              onChange={(e) => set("vocabulary", { surreality: Number(e.target.value) })}
+            />
+          </div>
+        </section>
+
+        <section className="settings-section">
           <h3>Aesthetics <em>美学</em></h3>
           <div className="field-row">
             <label>theme</label>
@@ -309,36 +251,6 @@ export function SceneSettings({ orchard, onDeleteWithered, onImported }: Props) 
               <option value="washi">washi paper</option>
               <option value="dawn">dawn</option>
             </select>
-          </div>
-          <div className="field-row">
-            <label>motion speed</label>
-            <input
-              type="range"
-              min={0.4}
-              max={1.6}
-              step={0.05}
-              value={settings.aesthetics.motionSpeed}
-              onChange={(e) => set("aesthetics", { motionSpeed: Number(e.target.value) })}
-            />
-          </div>
-          <div className="field-row">
-            <label>fruit glow warmth</label>
-            <input
-              type="range"
-              min={0}
-              max={1}
-              step={0.05}
-              value={settings.aesthetics.fruitGlowWarmth}
-              onChange={(e) => set("aesthetics", { fruitGlowWarmth: Number(e.target.value) })}
-            />
-          </div>
-          <div className="field-row">
-            <label>ambient watercolor bleed</label>
-            <input
-              type="checkbox"
-              checked={settings.aesthetics.watercolorBleed}
-              onChange={(e) => set("aesthetics", { watercolorBleed: e.target.checked })}
-            />
           </div>
         </section>
 

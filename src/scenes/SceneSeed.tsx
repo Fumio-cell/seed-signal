@@ -111,20 +111,20 @@ export function SceneSeed({ orchard, onPlant }: Props) {
             viewBox="0 0 360 110"
             data-drop="soil"
           >
-            <ellipse cx="180" cy="86" rx="168" ry="22" fill="#181322" />
+            <ellipse cx="180" cy="86" rx="168" ry="22" fill="#221a30" />
             <path
               d="M40 88 Q 110 34 180 40 Q 250 34 320 88 Q 250 74 180 76 Q 110 74 40 88 Z"
-              fill="#241c2e"
-              stroke="#3a3247"
+              fill="#302640"
+              stroke="#504266"
               strokeWidth="1.5"
             />
             <path
               d="M120 66 q 20 -6 40 -4 M200 60 q 22 -2 44 6 M150 78 q 30 -4 60 0"
               fill="none"
-              stroke="#453c58"
+              stroke="#5e4f74"
               strokeWidth="1"
               strokeLinecap="round"
-              opacity="0.7"
+              opacity="0.8"
             />
           </svg>
         </div>

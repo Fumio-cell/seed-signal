@@ -8,31 +8,24 @@ import type { AppSettings } from "../types";
 const KEY = "poeticSignalSettings";
 
 export const DEFAULT_SETTINGS: AppSettings = {
-  sound: { masterVolume: 0.7, sensitivity: 0.4, loopMode: "seamless" },
+  sound: { masterVolume: 0.7, loopMode: "seamless" },
   growth: {
     germinationSeconds: 8,
-    fruitDensity: 0.6,
-    seedsPerFruit: 12,
-    ripening: "gradual",
-    autoTranslate: true,
+    seedsPerFruit: 20,
   },
   language: {
-    primary: "en",
-    translationStyle: "poetic",
     syllableRule: "loose",
-    punctuation: "none",
   },
   grammar: {
-    magneticStrength: 0.3,
-    verbGuardrail: true,
     allowRiskyJoins: true,
     tagDisplay: "dots",
   },
+  vocabulary: {
+    generative: true,
+    surreality: 0.5,
+  },
   aesthetics: {
     theme: "indigo",
-    motionSpeed: 1,
-    fruitGlowWarmth: 0.5,
-    watercolorBleed: true,
   },
   archive: {
     defaultSort: "newest",

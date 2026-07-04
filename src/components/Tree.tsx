@@ -1,4 +1,5 @@
 import { Fragment, useEffect, useRef, useState } from "react";
+import type { CSSProperties } from "react";
 import { startDrag, dropTargetAt } from "../lib/drag";
 import trunkBranchesLeaves from "../assets/tree/trunk-branches-leaves.png";
 import pomegranate01 from "../assets/tree/pomegranate01-crop.png";
@@ -106,19 +107,23 @@ export function Tree({ phase, interactive, onPluck }: Props) {
     });
   };
 
-  // Bottom-up reveal: trunk sits in the painting's lower quarter, canopy
-  // spreads above it, so wiping the clip inset from 100% to 0% shows
-  // trunk first and branches/leaves as it continues.
-  const revealTop = phase <= 0 ? 100 : phase === 1 ? 55 : 0;
+  // Bottom-up "bloom" reveal: trunk sits in the painting's lower quarter,
+  // canopy spreads above it. A soft, feathered watercolour mask rises from
+  // the base (trunk first, then branches/leaves), led by a travelling band
+  // of gold light that seems to draw the branches into being. --reveal is
+  // the solid mask height from the base; it overshoots past 100% so the
+  // feathered band fully clears the canopy.
+  const revealPct = phase <= 0 ? 0 : phase === 1 ? 50 : 122;
+  const containerStyle = { ["--reveal" as string]: `${revealPct}%` } as CSSProperties;
 
   return (
-    <div className="grown-tree" ref={wrapRef}>
+    <div className="grown-tree" ref={wrapRef} style={containerStyle}>
       <img
         src={trunkBranchesLeaves}
         alt="a pomegranate tree's trunk, branches, and leaves"
         className="tree-branches-img"
-        style={{ clipPath: `inset(${revealTop}% 0 0 0)` }}
       />
+      <div className="bloom-edge" style={{ opacity: phase >= 1 && phase < 3 ? 1 : 0 }} />
       {box.width > 0 &&
         phase >= 3 &&
         FRUITS.map((f, i) => {
@@ -162,6 +167,17 @@ export function Tree({ phase, interactive, onPluck }: Props) {
                     onPointerDown={f.ripe ? startPluck(i) : undefined}
                     alt=""
                     draggable={false}
+                    // Ripe fruit sway in the wind — desynced per fruit (a
+                    // negative delay starts each mid-swing) so the canopy
+                    // stirs unevenly rather than in lockstep.
+                    style={
+                      f.ripe
+                        ? {
+                            animationDelay: `-${(i % 5) * 0.8}s`,
+                            animationDuration: `${4.6 + (i % 3) * 0.7}s`,
+                          }
+                        : undefined
+                    }
                   />
                 </div>
               )}

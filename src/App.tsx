@@ -26,6 +26,7 @@ import {
   loadTreeSessions,
   startTreeSession,
 } from "./store/treeSessions";
+import { generateSeeds } from "./lib/surreal";
 import { MusicContext, useMusicPlayerEngine } from "./audio/useMusicPlayer";
 import { MusicDock } from "./audio/MusicDock";
 import { TOTAL_RIPE_FRUITS } from "./components/Tree";
@@ -39,8 +40,6 @@ import { SceneDetail } from "./scenes/SceneDetail";
 import { SceneOverview } from "./scenes/SceneOverview";
 import { SceneSettings } from "./scenes/SceneSettings";
 
-const FIRST_BREAK = 12;
-const NEXT_BREAK = 6;
 
 function shuffle<T>(list: T[]): T[] {
   const a = [...list];
@@ -113,12 +112,26 @@ function AppInner({ musicTrackName }: { musicTrackName: string | null }) {
   };
 
   const draw = (t: Theme, n: number) => {
-    const out: PickedSeed[] = [];
-    for (let i = 0; i < n; i++) {
-      if (deckRef.current.length === 0) deckRef.current = shuffle(t.seeds);
-      const s = deckRef.current.pop()!;
-      out.push({ ...s, id: crypto.randomUUID(), picked: false, fruitNo: fruitBreakRef.current });
-    }
+    const templates = settings.vocabulary.generative
+      ? // Compose fresh surreal fragments each break (the "exquisite
+        // corpse" engine); the deck path below stays as the grounded
+        // fallback when generative vocabulary is switched off.
+        generateSeeds(t, n, settings.vocabulary.surreality)
+      : (() => {
+          const drawn: SeedTemplate[] = [];
+          for (let i = 0; i < n; i++) {
+            if (deckRef.current.length === 0) deckRef.current = shuffle(t.seeds);
+            drawn.push(deckRef.current.pop()!);
+          }
+          return drawn;
+        })();
+
+    const out: PickedSeed[] = templates.map((s) => ({
+      ...s,
+      id: crypto.randomUUID(),
+      picked: false,
+      fruitNo: fruitBreakRef.current,
+    }));
     setPool((p) => [...p, ...out]);
   };
 
@@ -133,7 +146,7 @@ function AppInner({ musicTrackName }: { musicTrackName: string | null }) {
     if (!theme) return;
     fruitBreakRef.current += 1;
     bumpSession(bumpFruitsBroken);
-    draw(theme, FIRST_BREAK);
+    draw(theme, settings.growth.seedsPerFruit);
     setScene("strand");
   };
 
@@ -141,7 +154,7 @@ function AppInner({ musicTrackName }: { musicTrackName: string | null }) {
     if (!theme) return;
     fruitBreakRef.current += 1;
     bumpSession(bumpFruitsBroken);
-    draw(theme, NEXT_BREAK);
+    draw(theme, settings.growth.seedsPerFruit);
   };
 
   const place = (seedId: string, line: number) => {
@@ -292,9 +305,15 @@ function AppInner({ musicTrackName }: { musicTrackName: string | null }) {
   return (
     <div className="app">
       <div className="top-bar">
-        <div className="brand">
+        <button
+          type="button"
+          className="brand"
+          onClick={() => setScene("seed")}
+          title="home — plant a seed"
+          aria-label="Seed Signal — back to home"
+        >
           Seed Signal<span className="jp">詩的信号</span>
-        </div>
+        </button>
         {scene !== "grow" && (
           <div className="top-nav">
             {scene !== "orchard" && (

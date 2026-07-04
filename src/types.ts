@@ -96,33 +96,25 @@ export interface TreeSession {
 export interface AppSettings {
   sound: {
     masterVolume: number; // 0..1
-    sensitivity: number; // 0..1, reserved for future audio-reactive visuals
     loopMode: "seamless" | "shuffle" | "once";
   };
   growth: {
     germinationSeconds: number;
-    fruitDensity: number; // 0..1
     seedsPerFruit: number;
-    ripening: "gradual" | "all-at-once" | "random";
-    autoTranslate: boolean;
   };
   language: {
-    primary: "en" | "jp";
-    translationStyle: "literal" | "poetic" | "both";
     syllableRule: "strict" | "loose" | "free";
-    punctuation: "none" | "ask";
   };
   grammar: {
-    magneticStrength: number; // 0..1
-    verbGuardrail: boolean;
     allowRiskyJoins: boolean;
     tagDisplay: "dots" | "labels" | "hidden";
   };
+  vocabulary: {
+    generative: boolean; // compose fresh surreal fragments per break
+    surreality: number; // 0..1 — 0 grounded/poetic, 1 dream-logic
+  };
   aesthetics: {
     theme: "indigo" | "washi" | "dawn";
-    motionSpeed: number; // 0..1, 1 = default meditative pace
-    fruitGlowWarmth: number; // 0..1
-    watercolorBleed: boolean;
   };
   archive: {
     defaultSort: "newest" | "oldest" | "grove" | "alphabetical";
