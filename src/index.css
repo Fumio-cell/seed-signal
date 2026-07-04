@@ -63,6 +63,9 @@ body {
   letter-spacing: 0.04em;
   color: var(--ink);
   /* Doubles as the home link (back to plant-a-seed). */
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
   background: none;
   border: none;
   padding: 0;
@@ -74,6 +77,18 @@ body {
 .brand:focus-visible {
   color: var(--gold);
   outline: none;
+}
+
+.brand-mark {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  transition: filter 0.25s;
+}
+
+.brand:hover .brand-mark,
+.brand:focus-visible .brand-mark {
+  filter: drop-shadow(0 0 6px var(--gold-soft));
 }
 
 .brand .jp {

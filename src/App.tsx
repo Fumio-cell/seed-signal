@@ -312,6 +312,7 @@ function AppInner({ musicTrackName }: { musicTrackName: string | null }) {
           title="home — plant a seed"
           aria-label="Seed Signal — back to home"
         >
+          <img src="/favicon.svg" alt="" className="brand-mark" aria-hidden="true" />
           Seed Signal<span className="jp">詩的信号</span>
         </button>
         {scene !== "grow" && (
