@@ -120,6 +120,10 @@ const UNIVERSAL: Bank = {
     { en: "a slow gesture", jp: "ゆるやかな身振り" },
     { en: "a paper screen", jp: "紙の衝立" },
     { en: "a court flute", jp: "篳篥" },
+    // food / fermentation
+    { en: "a loaf of bread", jp: "一斤のパン" },
+    { en: "a jar of preserves", jp: "保存瓶の中の果実" },
+    { en: "a mortar and pestle", jp: "すり鉢とすりこぎ" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -172,6 +176,10 @@ const UNIVERSAL: Bank = {
     { en: "negative space", jp: "余白" },
     { en: "automatism", jp: "自動筆記" },
     { en: "an afterimage", jp: "残像" },
+    // food / fermentation
+    { en: "fermentation", jp: "発酵" },
+    { en: "umami", jp: "旨味" },
+    { en: "nourishment", jp: "滋養" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -205,6 +213,13 @@ const UNIVERSAL: Bank = {
     // body
     { en: "sweat", jp: "汗" },
     { en: "tears", jp: "涙" },
+    // food / fermentation
+    { en: "yeast", jp: "酵母" },
+    { en: "brine", jp: "塩水" },
+    { en: "vinegar", jp: "酢" },
+    { en: "dough", jp: "生地" },
+    { en: "broth", jp: "出汁" },
+    { en: "whey", jp: "乳清" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -246,6 +261,11 @@ const UNIVERSAL: Bank = {
     // butoh / gagaku / zen / abstract art
     { en: "bows", jp: "礼をする" },
     { en: "holds still", jp: "静止したままでいる" },
+    // food / fermentation
+    { en: "ferments", jp: "発酵する" },
+    { en: "rises", jp: "膨らむ" },
+    { en: "sours", jp: "酸っぱくなる" },
+    { en: "steeps", jp: "浸る" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -282,6 +302,10 @@ const UNIVERSAL: Bank = {
     { en: "suspends", jp: "宙吊りにする" },
     { en: "erases", jp: "消し去る" },
     { en: "frames", jp: "縁取る" },
+    // food / fermentation
+    { en: "preserves", jp: "保存する" },
+    { en: "kneads", jp: "こねる" },
+    { en: "seasons", jp: "味付けする" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -384,6 +408,11 @@ const UNIVERSAL: Bank = {
     { en: "monochrome", jp: "単色の" },
     { en: "gestural", jp: "身振りの" },
     { en: "impermanent", jp: "無常の" },
+    // food / fermentation
+    { en: "fermented", jp: "発酵した" },
+    { en: "pickled", jp: "漬け込まれた" },
+    { en: "yeasty", jp: "酵母の香りの" },
+    { en: "brined", jp: "塩水に浸かった" },
   ],
 };
 
@@ -895,6 +924,10 @@ const WORLDS: Record<string, Bank> = {
       { en: "the first frost", jp: "初霜" },
       // body
       { en: "a calloused palm", jp: "たこのできた掌" },
+      // food / fermentation
+      { en: "a wine barrel", jp: "ワイン樽" },
+      { en: "a basket of fruit", jp: "果実の籠" },
+      { en: "a fermenting jar", jp: "発酵瓶" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -922,6 +955,8 @@ const WORLDS: Record<string, Bank> = {
       // zen
       { en: "impermanence", jp: "無常" },
       { en: "wabi-sabi", jp: "侘寂" },
+      // food / fermentation
+      { en: "nourishment", jp: "滋養" },
     ],
     material: [
       { en: "ash", jp: "灰" },
@@ -936,6 +971,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "clay", jp: "粘土" },
       { en: "mulch", jp: "マルチ材" },
       { en: "dew", jp: "露" },
+      // food / fermentation
+      { en: "brine", jp: "塩水" },
+      { en: "must", jp: "ぶどう果汁" },
     ],
     verbIntr: [
       { en: "kindles", jp: "燃えつく" },
@@ -952,6 +990,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "decomposes", jp: "分解する" },
       { en: "germinates", jp: "発芽する" },
       { en: "grows tired", jp: "疲れる" },
+      { en: "ferments", jp: "発酵する" },
     ],
     verbTrans: [
       { en: "scatters", jp: "散らす" },
@@ -965,6 +1004,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "harvests", jp: "収穫する" },
       { en: "renews", jp: "新たにする" },
       { en: "pollinates", jp: "受粉させる" },
+      { en: "preserves", jp: "保存する" },
     ],
     adj: [
       { en: "burnt", jp: "焼けた" },
@@ -991,6 +1031,9 @@ const WORLDS: Record<string, Bank> = {
       // senses (touch / smell)
       { en: "earthy", jp: "土の匂いのする" },
       { en: "brittle", jp: "脆い" },
+      // food / fermentation
+      { en: "fermented", jp: "発酵した" },
+      { en: "overripe", jp: "熟しすぎた" },
     ],
   },
 };
