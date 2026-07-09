@@ -124,6 +124,17 @@ const UNIVERSAL: Bank = {
     { en: "a loaf of bread", jp: "一斤のパン" },
     { en: "a jar of preserves", jp: "保存瓶の中の果実" },
     { en: "a mortar and pestle", jp: "すり鉢とすりこぎ" },
+    // architecture / geography
+    { en: "a courtyard", jp: "中庭" },
+    { en: "a rooftop", jp: "屋根" },
+    { en: "a chimney", jp: "煙突" },
+    { en: "a balcony", jp: "バルコニー" },
+    { en: "an archway", jp: "アーチ道" },
+    { en: "a peninsula", jp: "半島" },
+    { en: "a valley", jp: "谷" },
+    { en: "a plateau", jp: "高原" },
+    { en: "a watchtower", jp: "見張り塔" },
+    { en: "a frontier", jp: "国境地帯" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -180,6 +191,10 @@ const UNIVERSAL: Bank = {
     { en: "fermentation", jp: "発酵" },
     { en: "umami", jp: "旨味" },
     { en: "nourishment", jp: "滋養" },
+    // architecture / geography
+    { en: "geography", jp: "地理" },
+    { en: "elevation", jp: "標高" },
+    { en: "the border", jp: "国境" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -220,6 +235,12 @@ const UNIVERSAL: Bank = {
     { en: "dough", jp: "生地" },
     { en: "broth", jp: "出汁" },
     { en: "whey", jp: "乳清" },
+    // architecture / geography
+    { en: "brick", jp: "煉瓦" },
+    { en: "plaster", jp: "漆喰" },
+    { en: "timber", jp: "木材" },
+    { en: "mortar", jp: "モルタル" },
+    { en: "marble", jp: "大理石" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -266,6 +287,9 @@ const UNIVERSAL: Bank = {
     { en: "rises", jp: "膨らむ" },
     { en: "sours", jp: "酸っぱくなる" },
     { en: "steeps", jp: "浸る" },
+    // architecture / geography
+    { en: "crumbles", jp: "崩れる" },
+    { en: "looms", jp: "そびえ立つ" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -306,6 +330,10 @@ const UNIVERSAL: Bank = {
     { en: "preserves", jp: "保存する" },
     { en: "kneads", jp: "こねる" },
     { en: "seasons", jp: "味付けする" },
+    // architecture / geography
+    { en: "spans", jp: "架け渡す" },
+    { en: "overlooks", jp: "見下ろす" },
+    { en: "anchors", jp: "つなぎとめる" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -413,6 +441,14 @@ const UNIVERSAL: Bank = {
     { en: "pickled", jp: "漬け込まれた" },
     { en: "yeasty", jp: "酵母の香りの" },
     { en: "brined", jp: "塩水に浸かった" },
+    // architecture / geography
+    { en: "ancient", jp: "古代の" },
+    { en: "crumbling", jp: "崩れかけた" },
+    { en: "vaulted", jp: "アーチ天井の" },
+    { en: "cavernous", jp: "洞穴のような" },
+    { en: "remote", jp: "人里離れた" },
+    { en: "coastal", jp: "沿岸の" },
+    { en: "elevated", jp: "高台の" },
   ],
 };
 
@@ -482,6 +518,9 @@ const WORLDS: Record<string, Bank> = {
       // modern
       { en: "a burner phone", jp: "使い捨て携帯" },
       { en: "an incognito tab", jp: "シークレットタブ" },
+      // architecture / geography
+      { en: "a fire escape", jp: "非常階段" },
+      { en: "a high-rise", jp: "高層ビル" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -601,6 +640,9 @@ const WORLDS: Record<string, Bank> = {
       // states of mind, spoken around rather than named
       { en: "wide-eyed", jp: "見開いた目の" },
       { en: "vacant", jp: "うつろな" },
+      // architecture
+      { en: "vertical", jp: "垂直の" },
+      { en: "cramped", jp: "手狭な" },
     ],
   },
   // 鏡と閾 — reflection, doubling, doorways, the liminal.
@@ -644,6 +686,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a raised palm", jp: "上げた掌" },
       // psychological states
       { en: "a blank stare", jp: "虚ろな眼差し" },
+      // architecture
+      { en: "a vaulted ceiling", jp: "アーチ天井" },
+      { en: "an archway", jp: "アーチ道" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -796,6 +841,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a cupped ear", jp: "耳を澄ます手" },
       // gagaku / ma
       { en: "a fermata", jp: "延音記号" },
+      // geography
+      { en: "a remote outpost", jp: "人里離れた前哨基地" },
+      { en: "a watchtower", jp: "見張り塔" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -886,6 +934,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "crackling", jp: "ぱちぱちと鳴る" },
       // modern
       { en: "parasocial", jp: "一方的に親密な" },
+      // geography
+      { en: "remote", jp: "人里離れた" },
+      { en: "coastal", jp: "沿岸の" },
     ],
   },
   // 灰と種 — fire, soil, dormancy, the orchard's slow cycle.
@@ -928,6 +979,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a wine barrel", jp: "ワイン樽" },
       { en: "a basket of fruit", jp: "果実の籠" },
       { en: "a fermenting jar", jp: "発酵瓶" },
+      // architecture
+      { en: "a barn", jp: "納屋" },
+      { en: "a stone wall", jp: "石垣" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
