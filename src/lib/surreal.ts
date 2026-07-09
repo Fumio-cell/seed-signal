@@ -156,6 +156,14 @@ const UNIVERSAL: Bank = {
     { en: "a vanishing point", jp: "消失点" },
     { en: "an asymptote", jp: "漸近線" },
     { en: "a paradox", jp: "逆説" },
+    // light / shadow / time
+    { en: "a sundial", jp: "日時計" },
+    { en: "a candle", jp: "蝋燭" },
+    { en: "an hourglass", jp: "砂時計" },
+    { en: "a prism", jp: "プリズム" },
+    { en: "a sundog", jp: "幻日" },
+    { en: "a solstice", jp: "至点" },
+    { en: "an eclipse", jp: "食" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -223,6 +231,14 @@ const UNIVERSAL: Bank = {
     { en: "geometry", jp: "幾何学" },
     { en: "probability", jp: "確率" },
     { en: "proportion", jp: "比率" },
+    // light / shadow / time
+    { en: "dawn", jp: "夜明け" },
+    { en: "noon", jp: "正午" },
+    { en: "midnight", jp: "真夜中" },
+    { en: "shade", jp: "陰" },
+    { en: "radiance", jp: "光輝" },
+    { en: "duration", jp: "継続時間" },
+    { en: "an instant", jp: "一瞬" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -278,6 +294,8 @@ const UNIVERSAL: Bank = {
     { en: "burlap", jp: "麻袋地" },
     { en: "lace", jp: "レース" },
     { en: "silk", jp: "絹" },
+    // light / shadow
+    { en: "soot", jp: "煤" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -333,6 +351,10 @@ const UNIVERSAL: Bank = {
     // mathematics / geometry
     { en: "diverges", jp: "発散する" },
     { en: "converges", jp: "収束する" },
+    // light / shadow / time
+    { en: "glimmers", jp: "きらめく" },
+    { en: "dawns", jp: "明ける" },
+    { en: "elapses", jp: "過ぎ去る" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -388,6 +410,10 @@ const UNIVERSAL: Bank = {
     { en: "divides", jp: "分割する" },
     { en: "multiplies", jp: "増殖させる" },
     { en: "intersects", jp: "交差する" },
+    // light / shadow / time
+    { en: "casts", jp: "投げかける" },
+    { en: "shadows", jp: "影を落とす" },
+    { en: "eclipses", jp: "覆い隠す" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -517,6 +543,14 @@ const UNIVERSAL: Bank = {
     { en: "asymptotic", jp: "漸近的な" },
     { en: "proportional", jp: "比例した" },
     { en: "concentric", jp: "同心円状の" },
+    // light / shadow / time
+    { en: "fleeting", jp: "つかの間の" },
+    { en: "eternal", jp: "永遠の" },
+    { en: "momentary", jp: "束の間の" },
+    { en: "gilded", jp: "金色に輝く" },
+    { en: "shadowed", jp: "影に覆われた" },
+    { en: "sunlit", jp: "陽の当たる" },
+    { en: "moonlit", jp: "月に照らされた" },
   ],
 };
 
@@ -767,6 +801,8 @@ const WORLDS: Record<string, Bank> = {
       // geometry
       { en: "an axis", jp: "軸" },
       { en: "a vanishing point", jp: "消失点" },
+      // light / shadow
+      { en: "a candle flame", jp: "蝋燭の炎" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -881,6 +917,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "threadbare", jp: "擦り切れた" },
       // geometry
       { en: "symmetrical", jp: "左右対称の" },
+      // light / shadow
+      { en: "shadowed", jp: "影に覆われた" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -932,6 +970,7 @@ const WORLDS: Record<string, Bank> = {
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
+      { en: "midnight", jp: "真夜中" },
       { en: "static", jp: "静電気" },
       { en: "distance", jp: "隔たり" },
       { en: "the signal", jp: "信号" },
@@ -984,6 +1023,8 @@ const WORLDS: Record<string, Bank> = {
       // textile
       { en: "unspools", jp: "解け広がる" },
       { en: "frays", jp: "ほつれる" },
+      // time
+      { en: "dawns", jp: "明ける" },
     ],
     verbTrans: [
       { en: "carries", jp: "運ぶ" },
@@ -1076,6 +1117,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a patchwork quilt", jp: "継ぎ接ぎのキルト" },
       // geometry
       { en: "a growth ring", jp: "年輪" },
+      // light
+      { en: "a candle", jp: "蝋燭" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1188,6 +1231,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "overripe", jp: "熟しすぎた" },
       // geometry
       { en: "concentric", jp: "同心円状の" },
+      // light / time
+      { en: "fleeting", jp: "つかの間の" },
+      { en: "gilded", jp: "金色に輝く" },
     ],
   },
 };
