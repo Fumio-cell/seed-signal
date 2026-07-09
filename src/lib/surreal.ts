@@ -145,6 +145,17 @@ const UNIVERSAL: Bank = {
     { en: "a seam", jp: "縫い目" },
     { en: "a tapestry", jp: "つづれ織り" },
     { en: "a skein of yarn", jp: "毛糸の綛" },
+    // mathematics / geometry
+    { en: "a circle", jp: "円" },
+    { en: "a triangle", jp: "三角形" },
+    { en: "an axis", jp: "軸" },
+    { en: "a fractal", jp: "フラクタル" },
+    { en: "a pendulum", jp: "振り子" },
+    { en: "an equation", jp: "方程式" },
+    { en: "a grid", jp: "格子" },
+    { en: "a vanishing point", jp: "消失点" },
+    { en: "an asymptote", jp: "漸近線" },
+    { en: "a paradox", jp: "逆説" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -207,6 +218,11 @@ const UNIVERSAL: Bank = {
     { en: "the border", jp: "国境" },
     // textile / craft
     { en: "craftsmanship", jp: "職人技" },
+    // mathematics / geometry
+    { en: "infinity", jp: "無限" },
+    { en: "geometry", jp: "幾何学" },
+    { en: "probability", jp: "確率" },
+    { en: "proportion", jp: "比率" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -314,6 +330,9 @@ const UNIVERSAL: Bank = {
     // textile / craft
     { en: "frays", jp: "ほつれる" },
     { en: "weaves", jp: "織りなす" },
+    // mathematics / geometry
+    { en: "diverges", jp: "発散する" },
+    { en: "converges", jp: "収束する" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -364,6 +383,11 @@ const UNIVERSAL: Bank = {
     { en: "knots", jp: "結ぶ" },
     { en: "unspools", jp: "解け広がる" },
     { en: "embroiders", jp: "刺繍する" },
+    // mathematics / geometry
+    { en: "calculates", jp: "計算する" },
+    { en: "divides", jp: "分割する" },
+    { en: "multiplies", jp: "増殖させる" },
+    { en: "intersects", jp: "交差する" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -486,6 +510,13 @@ const UNIVERSAL: Bank = {
     { en: "threadbare", jp: "擦り切れた" },
     { en: "handstitched", jp: "手縫いの" },
     { en: "braided", jp: "編まれた" },
+    // mathematics / geometry
+    { en: "infinite", jp: "無限の" },
+    { en: "geometric", jp: "幾何学的な" },
+    { en: "symmetrical", jp: "左右対称の" },
+    { en: "asymptotic", jp: "漸近的な" },
+    { en: "proportional", jp: "比例した" },
+    { en: "concentric", jp: "同心円状の" },
   ],
 };
 
@@ -558,6 +589,8 @@ const WORLDS: Record<string, Bank> = {
       // architecture / geography
       { en: "a fire escape", jp: "非常階段" },
       { en: "a high-rise", jp: "高層ビル" },
+      // geometry
+      { en: "a grid", jp: "格子" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -680,6 +713,8 @@ const WORLDS: Record<string, Bank> = {
       // architecture
       { en: "vertical", jp: "垂直の" },
       { en: "cramped", jp: "手狭な" },
+      // geometry
+      { en: "geometric", jp: "幾何学的な" },
     ],
   },
   // 鏡と閾 — reflection, doubling, doorways, the liminal.
@@ -729,6 +764,9 @@ const WORLDS: Record<string, Bank> = {
       // textile / craft
       { en: "a seam", jp: "縫い目" },
       { en: "a tapestry", jp: "つづれ織り" },
+      // geometry
+      { en: "an axis", jp: "軸" },
+      { en: "a vanishing point", jp: "消失点" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -841,6 +879,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "stone-still", jp: "石のように動かない" },
       // textile
       { en: "threadbare", jp: "擦り切れた" },
+      // geometry
+      { en: "symmetrical", jp: "左右対称の" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -886,6 +926,9 @@ const WORLDS: Record<string, Bank> = {
       // geography
       { en: "a remote outpost", jp: "人里離れた前哨基地" },
       { en: "a watchtower", jp: "見張り塔" },
+      // geometry
+      { en: "an asymptote", jp: "漸近線" },
+      { en: "a pendulum", jp: "振り子" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -982,6 +1025,8 @@ const WORLDS: Record<string, Bank> = {
       // geography
       { en: "remote", jp: "人里離れた" },
       { en: "coastal", jp: "沿岸の" },
+      // geometry
+      { en: "asymptotic", jp: "漸近的な" },
     ],
   },
   // 灰と種 — fire, soil, dormancy, the orchard's slow cycle.
@@ -1029,6 +1074,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a stone wall", jp: "石垣" },
       // textile / craft
       { en: "a patchwork quilt", jp: "継ぎ接ぎのキルト" },
+      // geometry
+      { en: "a growth ring", jp: "年輪" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1139,6 +1186,8 @@ const WORLDS: Record<string, Bank> = {
       // food / fermentation
       { en: "fermented", jp: "発酵した" },
       { en: "overripe", jp: "熟しすぎた" },
+      // geometry
+      { en: "concentric", jp: "同心円状の" },
     ],
   },
 };
