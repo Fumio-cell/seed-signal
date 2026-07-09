@@ -135,6 +135,16 @@ const UNIVERSAL: Bank = {
     { en: "a plateau", jp: "高原" },
     { en: "a watchtower", jp: "見張り塔" },
     { en: "a frontier", jp: "国境地帯" },
+    // textile / craft
+    { en: "a spindle", jp: "紡錘" },
+    { en: "a loom", jp: "織機" },
+    { en: "a bobbin", jp: "糸巻き" },
+    { en: "a spool of thread", jp: "糸巻きの芯" },
+    { en: "a weaver's shuttle", jp: "織りの杼" },
+    { en: "a patchwork quilt", jp: "継ぎ接ぎのキルト" },
+    { en: "a seam", jp: "縫い目" },
+    { en: "a tapestry", jp: "つづれ織り" },
+    { en: "a skein of yarn", jp: "毛糸の綛" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -195,6 +205,8 @@ const UNIVERSAL: Bank = {
     { en: "geography", jp: "地理" },
     { en: "elevation", jp: "標高" },
     { en: "the border", jp: "国境" },
+    // textile / craft
+    { en: "craftsmanship", jp: "職人技" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -241,6 +253,15 @@ const UNIVERSAL: Bank = {
     { en: "timber", jp: "木材" },
     { en: "mortar", jp: "モルタル" },
     { en: "marble", jp: "大理石" },
+    // textile / craft
+    { en: "wool", jp: "羊毛" },
+    { en: "linen", jp: "麻布" },
+    { en: "cotton", jp: "綿" },
+    { en: "yarn", jp: "毛糸" },
+    { en: "felt", jp: "フェルト" },
+    { en: "burlap", jp: "麻袋地" },
+    { en: "lace", jp: "レース" },
+    { en: "silk", jp: "絹" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -290,6 +311,9 @@ const UNIVERSAL: Bank = {
     // architecture / geography
     { en: "crumbles", jp: "崩れる" },
     { en: "looms", jp: "そびえ立つ" },
+    // textile / craft
+    { en: "frays", jp: "ほつれる" },
+    { en: "weaves", jp: "織りなす" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -334,6 +358,12 @@ const UNIVERSAL: Bank = {
     { en: "spans", jp: "架け渡す" },
     { en: "overlooks", jp: "見下ろす" },
     { en: "anchors", jp: "つなぎとめる" },
+    // textile / craft
+    { en: "stitches", jp: "縫う" },
+    { en: "mends", jp: "繕う" },
+    { en: "knots", jp: "結ぶ" },
+    { en: "unspools", jp: "解け広がる" },
+    { en: "embroiders", jp: "刺繍する" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -449,6 +479,13 @@ const UNIVERSAL: Bank = {
     { en: "remote", jp: "人里離れた" },
     { en: "coastal", jp: "沿岸の" },
     { en: "elevated", jp: "高台の" },
+    // textile / craft
+    { en: "woven", jp: "織られた" },
+    { en: "frayed", jp: "ほつれた" },
+    { en: "knotted", jp: "結ばれた" },
+    { en: "threadbare", jp: "擦り切れた" },
+    { en: "handstitched", jp: "手縫いの" },
+    { en: "braided", jp: "編まれた" },
   ],
 };
 
@@ -689,6 +726,9 @@ const WORLDS: Record<string, Bank> = {
       // architecture
       { en: "a vaulted ceiling", jp: "アーチ天井" },
       { en: "an archway", jp: "アーチ道" },
+      // textile / craft
+      { en: "a seam", jp: "縫い目" },
+      { en: "a tapestry", jp: "つづれ織り" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -799,6 +839,8 @@ const WORLDS: Record<string, Bank> = {
       // states of mind, spoken around rather than named
       { en: "disembodied", jp: "身体感覚を失った" },
       { en: "stone-still", jp: "石のように動かない" },
+      // textile
+      { en: "threadbare", jp: "擦り切れた" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -896,6 +938,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "calls back", jp: "呼び返す" },
       // body
       { en: "strains to hear", jp: "聞き取ろうと耳を澄ます" },
+      // textile
+      { en: "unspools", jp: "解け広がる" },
+      { en: "frays", jp: "ほつれる" },
     ],
     verbTrans: [
       { en: "carries", jp: "運ぶ" },
@@ -982,6 +1027,8 @@ const WORLDS: Record<string, Bank> = {
       // architecture
       { en: "a barn", jp: "納屋" },
       { en: "a stone wall", jp: "石垣" },
+      // textile / craft
+      { en: "a patchwork quilt", jp: "継ぎ接ぎのキルト" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1028,6 +1075,9 @@ const WORLDS: Record<string, Bank> = {
       // food / fermentation
       { en: "brine", jp: "塩水" },
       { en: "must", jp: "ぶどう果汁" },
+      // textile
+      { en: "wool", jp: "羊毛" },
+      { en: "burlap", jp: "麻袋地" },
     ],
     verbIntr: [
       { en: "kindles", jp: "燃えつく" },
@@ -1059,6 +1109,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "renews", jp: "新たにする" },
       { en: "pollinates", jp: "受粉させる" },
       { en: "preserves", jp: "保存する" },
+      { en: "mends", jp: "繕う" },
     ],
     adj: [
       { en: "burnt", jp: "焼けた" },
