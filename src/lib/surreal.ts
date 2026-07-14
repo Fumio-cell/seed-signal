@@ -183,6 +183,12 @@ const UNIVERSAL: Bank = {
     { en: "a captain's log", jp: "航海日誌" },
     { en: "a rope", jp: "ロープ" },
     { en: "a mast", jp: "帆柱" },
+    // gems / minerals
+    { en: "a geode", jp: "晶洞" },
+    { en: "a crystal", jp: "結晶" },
+    { en: "a gemstone", jp: "宝石" },
+    { en: "a vein of ore", jp: "鉱脈" },
+    { en: "a quarry", jp: "採石場" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -266,6 +272,10 @@ const UNIVERSAL: Bank = {
     { en: "the tide", jp: "潮" },
     { en: "the current", jp: "海流" },
     { en: "navigation", jp: "航海術" },
+    // gems / minerals
+    { en: "luster", jp: "光沢" },
+    { en: "clarity", jp: "透明度" },
+    { en: "density", jp: "密度" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -327,6 +337,15 @@ const UNIVERSAL: Bank = {
     { en: "seawater", jp: "海水" },
     { en: "kelp", jp: "昆布" },
     { en: "driftwood", jp: "流木" },
+    // gems / minerals
+    { en: "quartz", jp: "石英" },
+    { en: "granite", jp: "花崗岩" },
+    { en: "obsidian", jp: "黒曜石" },
+    { en: "jade", jp: "翡翠" },
+    { en: "garnet", jp: "ガーネット" },
+    { en: "topaz", jp: "トパーズ" },
+    { en: "onyx", jp: "オニキス" },
+    { en: "mica", jp: "雲母" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -394,6 +413,10 @@ const UNIVERSAL: Bank = {
     { en: "sails", jp: "帆走する" },
     { en: "capsizes", jp: "転覆する" },
     { en: "moors", jp: "係留する" },
+    // gems / minerals
+    { en: "glitters", jp: "きらめく" },
+    { en: "glints", jp: "光を放つ" },
+    { en: "petrifies", jp: "石化する" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -460,6 +483,10 @@ const UNIVERSAL: Bank = {
     // maritime / sea
     { en: "navigates", jp: "航行する" },
     { en: "charts", jp: "海図に記す" },
+    // gems / minerals
+    { en: "polishes", jp: "磨く" },
+    { en: "mines", jp: "採掘する" },
+    { en: "unearths", jp: "掘り出す" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -611,6 +638,13 @@ const UNIVERSAL: Bank = {
     { en: "shipwrecked", jp: "難破した" },
     { en: "adrift", jp: "漂流した" },
     { en: "nautical", jp: "航海の" },
+    // gems / minerals
+    { en: "gemlike", jp: "宝石のような" },
+    { en: "opaque", jp: "不透明な" },
+    { en: "faceted", jp: "多面カットの" },
+    { en: "lustrous", jp: "光沢のある" },
+    { en: "polished", jp: "磨かれた" },
+    { en: "glittering", jp: "きらめく" },
   ],
 };
 
@@ -871,6 +905,9 @@ const WORLDS: Record<string, Bank> = {
       // journey
       { en: "a crossroads", jp: "十字路" },
       { en: "a signpost", jp: "道標" },
+      // gems / minerals
+      { en: "a crystal", jp: "結晶" },
+      { en: "a geode", jp: "晶洞" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -990,6 +1027,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "symmetrical", jp: "左右対称の" },
       // light / shadow
       { en: "shadowed", jp: "影に覆われた" },
+      // gems / minerals
+      { en: "faceted", jp: "多面カットの" },
+      { en: "polished", jp: "磨かれた" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -1210,6 +1250,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a candle", jp: "蝋燭" },
       // journey
       { en: "a wayside inn", jp: "道中の宿" },
+      // gems / minerals
+      { en: "a quarry", jp: "採石場" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1261,6 +1303,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "burlap", jp: "麻袋地" },
       // maritime
       { en: "driftwood", jp: "流木" },
+      // gems / minerals
+      { en: "obsidian", jp: "黒曜石" },
     ],
     verbIntr: [
       { en: "kindles", jp: "燃えつく" },
@@ -1293,6 +1337,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "pollinates", jp: "受粉させる" },
       { en: "preserves", jp: "保存する" },
       { en: "mends", jp: "繕う" },
+      { en: "unearths", jp: "掘り出す" },
     ],
     adj: [
       { en: "burnt", jp: "焼けた" },
