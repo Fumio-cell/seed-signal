@@ -201,6 +201,17 @@ const UNIVERSAL: Bank = {
     { en: "a windowsill", jp: "窓辺" },
     { en: "a mantelpiece", jp: "炉棚" },
     { en: "a drawer", jp: "引き出し" },
+    // birds / insects / small creatures
+    { en: "a sparrow", jp: "雀" },
+    { en: "a cicada", jp: "蝉" },
+    { en: "a firefly", jp: "蛍" },
+    { en: "a beetle", jp: "甲虫" },
+    { en: "a dragonfly", jp: "蜻蛉" },
+    { en: "a spider's web", jp: "蜘蛛の巣" },
+    { en: "a nest", jp: "巣" },
+    { en: "a swallow", jp: "燕" },
+    { en: "an owl", jp: "梟" },
+    { en: "a cricket", jp: "コオロギ" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -292,6 +303,9 @@ const UNIVERSAL: Bank = {
     { en: "privacy", jp: "プライバシー" },
     { en: "domesticity", jp: "家庭性" },
     { en: "belonging", jp: "帰属感" },
+    // birds / insects
+    { en: "birdsong", jp: "小鳥のさえずり" },
+    { en: "metamorphosis", jp: "変態" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -365,6 +379,8 @@ const UNIVERSAL: Bank = {
     // furniture
     { en: "varnish", jp: "ニス" },
     { en: "upholstery", jp: "布張り" },
+    // insects
+    { en: "beeswax", jp: "蜜蝋" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -438,6 +454,11 @@ const UNIVERSAL: Bank = {
     { en: "petrifies", jp: "石化する" },
     // furniture
     { en: "creaks", jp: "きしむ" },
+    // insects / small creatures
+    { en: "flutters", jp: "羽ばたく" },
+    { en: "nests", jp: "巣を作る" },
+    { en: "molts", jp: "脱皮する" },
+    { en: "swarms", jp: "群がる" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -512,6 +533,8 @@ const UNIVERSAL: Bank = {
     { en: "locks", jp: "施錠する" },
     { en: "furnishes", jp: "家具を備える" },
     { en: "latches", jp: "掛け金を掛ける" },
+    // insects
+    { en: "stings", jp: "刺す" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -676,6 +699,12 @@ const UNIVERSAL: Bank = {
     { en: "creaky", jp: "きしむ" },
     { en: "domestic", jp: "家庭的な" },
     { en: "furnished", jp: "家具付きの" },
+    // insects / small creatures
+    { en: "winged", jp: "羽のある" },
+    { en: "fluttering", jp: "羽ばたく" },
+    { en: "gossamer", jp: "薄絹のような" },
+    { en: "chitinous", jp: "甲殻質の" },
+    { en: "nocturnal", jp: "夜行性の" },
   ],
 };
 
@@ -1120,6 +1149,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a ship", jp: "船" },
       { en: "a shipwreck", jp: "難破船" },
       { en: "a captain's log", jp: "航海日誌" },
+      // birds
+      { en: "a nest", jp: "巣" },
+      { en: "a sparrow", jp: "雀" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -1142,6 +1174,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "breathlessness", jp: "息を切らすこと" },
       // maritime
       { en: "the tide", jp: "潮" },
+      // birds
+      { en: "birdsong", jp: "小鳥のさえずり" },
     ],
     material: [
       { en: "static", jp: "静電気" },
@@ -1290,6 +1324,10 @@ const WORLDS: Record<string, Bank> = {
       // furniture
       { en: "a rocking chair", jp: "揺り椅子" },
       { en: "a mantelpiece", jp: "炉棚" },
+      // insects
+      { en: "a cicada", jp: "蝉" },
+      { en: "a firefly", jp: "蛍" },
+      { en: "a cricket", jp: "コオロギ" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1343,6 +1381,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "driftwood", jp: "流木" },
       // gems / minerals
       { en: "obsidian", jp: "黒曜石" },
+      // insects
+      { en: "beeswax", jp: "蜜蝋" },
     ],
     verbIntr: [
       { en: "kindles", jp: "燃えつく" },
