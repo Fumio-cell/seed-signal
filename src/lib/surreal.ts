@@ -212,6 +212,15 @@ const UNIVERSAL: Bank = {
     { en: "a swallow", jp: "燕" },
     { en: "an owl", jp: "梟" },
     { en: "a cricket", jp: "コオロギ" },
+    // wind
+    { en: "a gust", jp: "突風" },
+    { en: "a breeze", jp: "そよ風" },
+    { en: "a gale", jp: "強風" },
+    { en: "a whirlwind", jp: "つむじ風" },
+    { en: "a draft", jp: "隙間風" },
+    { en: "a windmill", jp: "風車" },
+    { en: "a weathervane", jp: "風見鶏" },
+    { en: "a kite", jp: "凧" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -306,6 +315,10 @@ const UNIVERSAL: Bank = {
     // birds / insects
     { en: "birdsong", jp: "小鳥のさえずり" },
     { en: "metamorphosis", jp: "変態" },
+    // wind
+    { en: "a headwind", jp: "向かい風" },
+    { en: "a tailwind", jp: "追い風" },
+    { en: "turbulence", jp: "乱気流" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -459,6 +472,13 @@ const UNIVERSAL: Bank = {
     { en: "nests", jp: "巣を作る" },
     { en: "molts", jp: "脱皮する" },
     { en: "swarms", jp: "群がる" },
+    // wind
+    { en: "gusts", jp: "突風が吹く" },
+    { en: "billows", jp: "はためく" },
+    { en: "swirls", jp: "渦を巻く" },
+    { en: "whistles", jp: "口笛のように鳴る" },
+    { en: "rustles", jp: "さらさらと鳴る" },
+    { en: "sways", jp: "揺れる" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -535,6 +555,8 @@ const UNIVERSAL: Bank = {
     { en: "latches", jp: "掛け金を掛ける" },
     // insects
     { en: "stings", jp: "刺す" },
+    // wind
+    { en: "bends", jp: "しならせる" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -705,6 +727,12 @@ const UNIVERSAL: Bank = {
     { en: "gossamer", jp: "薄絹のような" },
     { en: "chitinous", jp: "甲殻質の" },
     { en: "nocturnal", jp: "夜行性の" },
+    // wind
+    { en: "windless", jp: "風のない" },
+    { en: "blustery", jp: "荒々しく吹く" },
+    { en: "gusty", jp: "突風の吹く" },
+    { en: "breezy", jp: "そよ風の吹く" },
+    { en: "gale-force", jp: "暴風の" },
   ],
 };
 
@@ -782,6 +810,8 @@ const WORLDS: Record<string, Bank> = {
       // journey
       { en: "a departure gate", jp: "搭乗口" },
       { en: "a boarding pass", jp: "搭乗券" },
+      // wind
+      { en: "a gust", jp: "突風" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -810,6 +840,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "autopilot", jp: "自動操縦" },
       // states of mind, spoken around rather than named
       { en: "sleepless watching", jp: "眠らぬ見張り" },
+      // wind
+      { en: "turbulence", jp: "乱気流" },
     ],
     material: [
       { en: "neon", jp: "ネオン" },
@@ -971,6 +1003,8 @@ const WORLDS: Record<string, Bank> = {
       // keys / locks / furniture
       { en: "a deadbolt", jp: "デッドボルト" },
       { en: "a windowsill", jp: "窓辺" },
+      // wind
+      { en: "a draft", jp: "隙間風" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -1094,6 +1128,8 @@ const WORLDS: Record<string, Bank> = {
       // gems / minerals
       { en: "faceted", jp: "多面カットの" },
       { en: "polished", jp: "磨かれた" },
+      // wind
+      { en: "windless", jp: "風のない" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -1220,6 +1256,8 @@ const WORLDS: Record<string, Bank> = {
       // maritime
       { en: "moors", jp: "係留する" },
       { en: "capsizes", jp: "転覆する" },
+      // wind
+      { en: "whistles", jp: "口笛のように鳴る" },
     ],
     verbTrans: [
       { en: "carries", jp: "運ぶ" },
@@ -1328,6 +1366,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a cicada", jp: "蝉" },
       { en: "a firefly", jp: "蛍" },
       { en: "a cricket", jp: "コオロギ" },
+      // wind
+      { en: "a weathervane", jp: "風見鶏" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1400,6 +1440,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "germinates", jp: "発芽する" },
       { en: "grows tired", jp: "疲れる" },
       { en: "ferments", jp: "発酵する" },
+      { en: "rustles", jp: "さらさらと鳴る" },
     ],
     verbTrans: [
       { en: "scatters", jp: "散らす" },
