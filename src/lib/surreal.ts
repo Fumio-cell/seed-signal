@@ -221,6 +221,17 @@ const UNIVERSAL: Bank = {
     { en: "a windmill", jp: "風車" },
     { en: "a weathervane", jp: "風見鶏" },
     { en: "a kite", jp: "凧" },
+    // myth / folklore (modern usage)
+    { en: "a labyrinth", jp: "迷宮" },
+    { en: "an oracle", jp: "神託" },
+    { en: "a phoenix", jp: "不死鳥" },
+    { en: "a chimera", jp: "キメラ" },
+    { en: "a doppelganger", jp: "分身" },
+    { en: "a golem", jp: "ゴーレム" },
+    { en: "a totem", jp: "トーテム" },
+    { en: "a portal", jp: "扉口" },
+    { en: "an amulet", jp: "護符" },
+    { en: "a trickster", jp: "トリックスター" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -319,6 +330,14 @@ const UNIVERSAL: Bank = {
     { en: "a headwind", jp: "向かい風" },
     { en: "a tailwind", jp: "追い風" },
     { en: "turbulence", jp: "乱気流" },
+    // myth / folklore
+    { en: "fate", jp: "運命" },
+    { en: "destiny", jp: "宿命" },
+    { en: "prophecy", jp: "予言" },
+    { en: "an omen", jp: "前兆" },
+    { en: "immortality", jp: "不死" },
+    { en: "a myth", jp: "神話" },
+    { en: "a legend", jp: "伝説" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -479,6 +498,9 @@ const UNIVERSAL: Bank = {
     { en: "whistles", jp: "口笛のように鳴る" },
     { en: "rustles", jp: "さらさらと鳴る" },
     { en: "sways", jp: "揺れる" },
+    // myth / folklore
+    { en: "shapeshifts", jp: "姿を変える" },
+    { en: "transforms", jp: "変容する" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -557,6 +579,10 @@ const UNIVERSAL: Bank = {
     { en: "stings", jp: "刺す" },
     // wind
     { en: "bends", jp: "しならせる" },
+    // myth / folklore
+    { en: "curses", jp: "呪う" },
+    { en: "enchants", jp: "魔法をかける" },
+    { en: "guards", jp: "守護する" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -733,6 +759,13 @@ const UNIVERSAL: Bank = {
     { en: "gusty", jp: "突風の吹く" },
     { en: "breezy", jp: "そよ風の吹く" },
     { en: "gale-force", jp: "暴風の" },
+    // myth / folklore
+    { en: "mythic", jp: "神話的な" },
+    { en: "legendary", jp: "伝説的な" },
+    { en: "immortal", jp: "不死の" },
+    { en: "cursed", jp: "呪われた" },
+    { en: "enchanted", jp: "魔法をかけられた" },
+    { en: "prophetic", jp: "予言的な" },
   ],
 };
 
@@ -1005,6 +1038,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a windowsill", jp: "窓辺" },
       // wind
       { en: "a draft", jp: "隙間風" },
+      // myth
+      { en: "a doppelganger", jp: "分身" },
+      { en: "a portal", jp: "扉口" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -1075,6 +1111,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "hesitates", jp: "ためらう" },
       { en: "blurs", jp: "ぼやける" },
       { en: "overlaps", jp: "重なる" },
+      { en: "shapeshifts", jp: "姿を変える" },
     ],
     verbTrans: [
       { en: "mirrors", jp: "映す" },
@@ -1130,6 +1167,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "polished", jp: "磨かれた" },
       // wind
       { en: "windless", jp: "風のない" },
+      // myth
+      { en: "enchanted", jp: "魔法をかけられた" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -1188,6 +1227,8 @@ const WORLDS: Record<string, Bank> = {
       // birds
       { en: "a nest", jp: "巣" },
       { en: "a sparrow", jp: "雀" },
+      // myth
+      { en: "an oracle", jp: "神託" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -1212,6 +1253,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "the tide", jp: "潮" },
       // birds
       { en: "birdsong", jp: "小鳥のさえずり" },
+      // myth
+      { en: "an omen", jp: "前兆" },
     ],
     material: [
       { en: "static", jp: "静電気" },
@@ -1304,6 +1347,8 @@ const WORLDS: Record<string, Bank> = {
       // maritime
       { en: "adrift", jp: "漂流した" },
       { en: "tidal", jp: "潮の" },
+      // myth
+      { en: "prophetic", jp: "予言的な" },
     ],
   },
   // 灰と種 — fire, soil, dormancy, the orchard's slow cycle.
@@ -1368,6 +1413,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a cricket", jp: "コオロギ" },
       // wind
       { en: "a weathervane", jp: "風見鶏" },
+      // myth
+      { en: "a phoenix", jp: "不死鳥" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1397,6 +1444,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "wabi-sabi", jp: "侘寂" },
       // food / fermentation
       { en: "nourishment", jp: "滋養" },
+      // myth
+      { en: "a legend", jp: "伝説" },
     ],
     material: [
       { en: "ash", jp: "灰" },
@@ -1441,6 +1490,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "grows tired", jp: "疲れる" },
       { en: "ferments", jp: "発酵する" },
       { en: "rustles", jp: "さらさらと鳴る" },
+      { en: "transforms", jp: "変容する" },
     ],
     verbTrans: [
       { en: "scatters", jp: "散らす" },
@@ -1497,6 +1547,8 @@ const WORLDS: Record<string, Bank> = {
       // furniture
       { en: "creaky", jp: "きしむ" },
       { en: "domestic", jp: "家庭的な" },
+      // myth
+      { en: "mythic", jp: "神話的な" },
     ],
   },
 };
