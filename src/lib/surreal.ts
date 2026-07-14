@@ -189,6 +189,18 @@ const UNIVERSAL: Bank = {
     { en: "a gemstone", jp: "宝石" },
     { en: "a vein of ore", jp: "鉱脈" },
     { en: "a quarry", jp: "採石場" },
+    // keys / locks / furniture
+    { en: "a padlock", jp: "南京錠" },
+    { en: "a deadbolt", jp: "デッドボルト" },
+    { en: "a chest of drawers", jp: "箪笥" },
+    { en: "a rocking chair", jp: "揺り椅子" },
+    { en: "an armchair", jp: "肘掛け椅子" },
+    { en: "a wardrobe", jp: "洋服箪笥" },
+    { en: "a desk", jp: "机" },
+    { en: "a bookshelf", jp: "本棚" },
+    { en: "a windowsill", jp: "窓辺" },
+    { en: "a mantelpiece", jp: "炉棚" },
+    { en: "a drawer", jp: "引き出し" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -276,6 +288,10 @@ const UNIVERSAL: Bank = {
     { en: "luster", jp: "光沢" },
     { en: "clarity", jp: "透明度" },
     { en: "density", jp: "密度" },
+    // keys / locks / furniture
+    { en: "privacy", jp: "プライバシー" },
+    { en: "domesticity", jp: "家庭性" },
+    { en: "belonging", jp: "帰属感" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -346,6 +362,9 @@ const UNIVERSAL: Bank = {
     { en: "topaz", jp: "トパーズ" },
     { en: "onyx", jp: "オニキス" },
     { en: "mica", jp: "雲母" },
+    // furniture
+    { en: "varnish", jp: "ニス" },
+    { en: "upholstery", jp: "布張り" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -417,6 +436,8 @@ const UNIVERSAL: Bank = {
     { en: "glitters", jp: "きらめく" },
     { en: "glints", jp: "光を放つ" },
     { en: "petrifies", jp: "石化する" },
+    // furniture
+    { en: "creaks", jp: "きしむ" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -487,6 +508,10 @@ const UNIVERSAL: Bank = {
     { en: "polishes", jp: "磨く" },
     { en: "mines", jp: "採掘する" },
     { en: "unearths", jp: "掘り出す" },
+    // keys / locks / furniture
+    { en: "locks", jp: "施錠する" },
+    { en: "furnishes", jp: "家具を備える" },
+    { en: "latches", jp: "掛け金を掛ける" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -645,6 +670,12 @@ const UNIVERSAL: Bank = {
     { en: "lustrous", jp: "光沢のある" },
     { en: "polished", jp: "磨かれた" },
     { en: "glittering", jp: "きらめく" },
+    // keys / locks / furniture
+    { en: "locked", jp: "施錠された" },
+    { en: "upholstered", jp: "布張りの" },
+    { en: "creaky", jp: "きしむ" },
+    { en: "domestic", jp: "家庭的な" },
+    { en: "furnished", jp: "家具付きの" },
   ],
 };
 
@@ -908,6 +939,9 @@ const WORLDS: Record<string, Bank> = {
       // gems / minerals
       { en: "a crystal", jp: "結晶" },
       { en: "a geode", jp: "晶洞" },
+      // keys / locks / furniture
+      { en: "a deadbolt", jp: "デッドボルト" },
+      { en: "a windowsill", jp: "窓辺" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -1002,6 +1036,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "thin", jp: "薄い" },
       { en: "wordless", jp: "言葉のない" },
       { en: "unlocked", jp: "鍵のあいた" },
+      { en: "locked", jp: "施錠された" },
       { en: "twinned", jp: "対になった" },
       { en: "familiar", jp: "見覚えのある" },
       { en: "frosted", jp: "曇った" },
@@ -1252,6 +1287,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a wayside inn", jp: "道中の宿" },
       // gems / minerals
       { en: "a quarry", jp: "採石場" },
+      // furniture
+      { en: "a rocking chair", jp: "揺り椅子" },
+      { en: "a mantelpiece", jp: "炉棚" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1375,6 +1413,9 @@ const WORLDS: Record<string, Bank> = {
       // journey
       { en: "homeward", jp: "家路の" },
       { en: "wayworn", jp: "旅に疲れた" },
+      // furniture
+      { en: "creaky", jp: "きしむ" },
+      { en: "domestic", jp: "家庭的な" },
     ],
   },
 };
