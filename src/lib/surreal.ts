@@ -164,6 +164,16 @@ const UNIVERSAL: Bank = {
     { en: "a sundog", jp: "幻日" },
     { en: "a solstice", jp: "至点" },
     { en: "an eclipse", jp: "食" },
+    // journey / travel
+    { en: "a train station", jp: "駅" },
+    { en: "a platform", jp: "プラットフォーム" },
+    { en: "a departure gate", jp: "搭乗口" },
+    { en: "a passport", jp: "パスポート" },
+    { en: "a ticket stub", jp: "半券" },
+    { en: "a milestone", jp: "一里塚" },
+    { en: "a crossroads", jp: "十字路" },
+    { en: "a wayside inn", jp: "道中の宿" },
+    { en: "a signpost", jp: "道標" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -239,6 +249,10 @@ const UNIVERSAL: Bank = {
     { en: "radiance", jp: "光輝" },
     { en: "duration", jp: "継続時間" },
     { en: "an instant", jp: "一瞬" },
+    // journey / travel
+    { en: "wanderlust", jp: "旅への渇望" },
+    { en: "departure", jp: "出発" },
+    { en: "arrival", jp: "到着" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -355,6 +369,10 @@ const UNIVERSAL: Bank = {
     { en: "glimmers", jp: "きらめく" },
     { en: "dawns", jp: "明ける" },
     { en: "elapses", jp: "過ぎ去る" },
+    // journey / travel
+    { en: "departs", jp: "出発する" },
+    { en: "arrives", jp: "到着する" },
+    { en: "journeys", jp: "旅をする" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -414,6 +432,10 @@ const UNIVERSAL: Bank = {
     { en: "casts", jp: "投げかける" },
     { en: "shadows", jp: "影を落とす" },
     { en: "eclipses", jp: "覆い隠す" },
+    // journey / travel
+    { en: "boards", jp: "乗り込む" },
+    { en: "crosses", jp: "渡る" },
+    { en: "traverses", jp: "踏破する" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -551,6 +573,13 @@ const UNIVERSAL: Bank = {
     { en: "shadowed", jp: "影に覆われた" },
     { en: "sunlit", jp: "陽の当たる" },
     { en: "moonlit", jp: "月に照らされた" },
+    // journey / travel
+    { en: "itinerant", jp: "旅回りの" },
+    { en: "nomadic", jp: "遊牧の" },
+    { en: "homeward", jp: "家路の" },
+    { en: "wayworn", jp: "旅に疲れた" },
+    { en: "unmapped", jp: "地図にない" },
+    { en: "transient", jp: "一時的な" },
   ],
 };
 
@@ -625,6 +654,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a high-rise", jp: "高層ビル" },
       // geometry
       { en: "a grid", jp: "格子" },
+      // journey
+      { en: "a departure gate", jp: "搭乗口" },
+      { en: "a boarding pass", jp: "搭乗券" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -749,6 +781,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "cramped", jp: "手狭な" },
       // geometry
       { en: "geometric", jp: "幾何学的な" },
+      // journey
+      { en: "transient", jp: "一時的な" },
     ],
   },
   // 鏡と閾 — reflection, doubling, doorways, the liminal.
@@ -803,6 +837,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a vanishing point", jp: "消失点" },
       // light / shadow
       { en: "a candle flame", jp: "蝋燭の炎" },
+      // journey
+      { en: "a crossroads", jp: "十字路" },
+      { en: "a signpost", jp: "道標" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -835,6 +872,9 @@ const WORLDS: Record<string, Bank> = {
       // zen / abstract art
       { en: "negative space", jp: "余白" },
       { en: "an afterimage", jp: "残像" },
+      // journey
+      { en: "arrival", jp: "到着" },
+      { en: "departure", jp: "出発" },
     ],
     material: [
       { en: "glass", jp: "硝子" },
@@ -967,6 +1007,9 @@ const WORLDS: Record<string, Bank> = {
       // geometry
       { en: "an asymptote", jp: "漸近線" },
       { en: "a pendulum", jp: "振り子" },
+      // journey
+      { en: "a milestone", jp: "一里塚" },
+      { en: "a wayside inn", jp: "道中の宿" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -1119,6 +1162,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a growth ring", jp: "年輪" },
       // light
       { en: "a candle", jp: "蝋燭" },
+      // journey
+      { en: "a wayside inn", jp: "道中の宿" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1234,6 +1279,9 @@ const WORLDS: Record<string, Bank> = {
       // light / time
       { en: "fleeting", jp: "つかの間の" },
       { en: "gilded", jp: "金色に輝く" },
+      // journey
+      { en: "homeward", jp: "家路の" },
+      { en: "wayworn", jp: "旅に疲れた" },
     ],
   },
 };
