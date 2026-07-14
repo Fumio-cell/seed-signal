@@ -174,6 +174,15 @@ const UNIVERSAL: Bank = {
     { en: "a crossroads", jp: "十字路" },
     { en: "a wayside inn", jp: "道中の宿" },
     { en: "a signpost", jp: "道標" },
+    // maritime / sea
+    { en: "a ship", jp: "船" },
+    { en: "a sail", jp: "帆" },
+    { en: "a harbor", jp: "港" },
+    { en: "a shipwreck", jp: "難破船" },
+    { en: "a compass rose", jp: "方位図" },
+    { en: "a captain's log", jp: "航海日誌" },
+    { en: "a rope", jp: "ロープ" },
+    { en: "a mast", jp: "帆柱" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -253,6 +262,10 @@ const UNIVERSAL: Bank = {
     { en: "wanderlust", jp: "旅への渇望" },
     { en: "departure", jp: "出発" },
     { en: "arrival", jp: "到着" },
+    // maritime / sea
+    { en: "the tide", jp: "潮" },
+    { en: "the current", jp: "海流" },
+    { en: "navigation", jp: "航海術" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -310,6 +323,10 @@ const UNIVERSAL: Bank = {
     { en: "silk", jp: "絹" },
     // light / shadow
     { en: "soot", jp: "煤" },
+    // maritime / sea
+    { en: "seawater", jp: "海水" },
+    { en: "kelp", jp: "昆布" },
+    { en: "driftwood", jp: "流木" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -373,6 +390,10 @@ const UNIVERSAL: Bank = {
     { en: "departs", jp: "出発する" },
     { en: "arrives", jp: "到着する" },
     { en: "journeys", jp: "旅をする" },
+    // maritime / sea
+    { en: "sails", jp: "帆走する" },
+    { en: "capsizes", jp: "転覆する" },
+    { en: "moors", jp: "係留する" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -436,6 +457,9 @@ const UNIVERSAL: Bank = {
     { en: "boards", jp: "乗り込む" },
     { en: "crosses", jp: "渡る" },
     { en: "traverses", jp: "踏破する" },
+    // maritime / sea
+    { en: "navigates", jp: "航行する" },
+    { en: "charts", jp: "海図に記す" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -580,6 +604,13 @@ const UNIVERSAL: Bank = {
     { en: "wayworn", jp: "旅に疲れた" },
     { en: "unmapped", jp: "地図にない" },
     { en: "transient", jp: "一時的な" },
+    // maritime / sea
+    { en: "seafaring", jp: "航海の" },
+    { en: "briny", jp: "塩気を帯びた" },
+    { en: "tidal", jp: "潮の" },
+    { en: "shipwrecked", jp: "難破した" },
+    { en: "adrift", jp: "漂流した" },
+    { en: "nautical", jp: "航海の" },
   ],
 };
 
@@ -1010,6 +1041,10 @@ const WORLDS: Record<string, Bank> = {
       // journey
       { en: "a milestone", jp: "一里塚" },
       { en: "a wayside inn", jp: "道中の宿" },
+      // maritime
+      { en: "a ship", jp: "船" },
+      { en: "a shipwreck", jp: "難破船" },
+      { en: "a captain's log", jp: "航海日誌" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -1030,6 +1065,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "frequency drift", jp: "周波数のずれ" },
       // body
       { en: "breathlessness", jp: "息を切らすこと" },
+      // maritime
+      { en: "the tide", jp: "潮" },
     ],
     material: [
       { en: "static", jp: "静電気" },
@@ -1044,6 +1081,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "sea spray", jp: "潮しぶき" },
       { en: "feedback", jp: "ハウリング" },
       { en: "sea fog", jp: "海霧" },
+      // maritime
+      { en: "seawater", jp: "海水" },
+      { en: "driftwood", jp: "流木" },
     ],
     verbIntr: [
       { en: "transmits", jp: "送信する" },
@@ -1068,6 +1108,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "frays", jp: "ほつれる" },
       // time
       { en: "dawns", jp: "明ける" },
+      // maritime
+      { en: "moors", jp: "係留する" },
+      { en: "capsizes", jp: "転覆する" },
     ],
     verbTrans: [
       { en: "carries", jp: "運ぶ" },
@@ -1111,6 +1154,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "coastal", jp: "沿岸の" },
       // geometry
       { en: "asymptotic", jp: "漸近的な" },
+      // maritime
+      { en: "adrift", jp: "漂流した" },
+      { en: "tidal", jp: "潮の" },
     ],
   },
   // 灰と種 — fire, soil, dormancy, the orchard's slow cycle.
@@ -1213,6 +1259,8 @@ const WORLDS: Record<string, Bank> = {
       // textile
       { en: "wool", jp: "羊毛" },
       { en: "burlap", jp: "麻袋地" },
+      // maritime
+      { en: "driftwood", jp: "流木" },
     ],
     verbIntr: [
       { en: "kindles", jp: "燃えつく" },
