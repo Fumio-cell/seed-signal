@@ -232,6 +232,16 @@ const UNIVERSAL: Bank = {
     { en: "a portal", jp: "扉口" },
     { en: "an amulet", jp: "護符" },
     { en: "a trickster", jp: "トリックスター" },
+    // games / play
+    { en: "a chessboard", jp: "チェス盤" },
+    { en: "a die", jp: "さいころ" },
+    { en: "a puzzle piece", jp: "パズルの欠片" },
+    { en: "a marble", jp: "ビー玉" },
+    { en: "a playing card", jp: "トランプ" },
+    { en: "a maze", jp: "迷路" },
+    { en: "a jigsaw", jp: "ジグソーパズル" },
+    { en: "a marionette", jp: "操り人形" },
+    { en: "a game board", jp: "ゲーム盤" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -338,6 +348,11 @@ const UNIVERSAL: Bank = {
     { en: "immortality", jp: "不死" },
     { en: "a myth", jp: "神話" },
     { en: "a legend", jp: "伝説" },
+    // games / play
+    { en: "a gamble", jp: "賭け" },
+    { en: "a stalemate", jp: "手詰まり" },
+    { en: "a rule", jp: "規則" },
+    { en: "luck", jp: "運" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -501,6 +516,9 @@ const UNIVERSAL: Bank = {
     // myth / folklore
     { en: "shapeshifts", jp: "姿を変える" },
     { en: "transforms", jp: "変容する" },
+    // games / play
+    { en: "gambles", jp: "賭ける" },
+    { en: "plays", jp: "遊ぶ" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -583,6 +601,11 @@ const UNIVERSAL: Bank = {
     { en: "curses", jp: "呪う" },
     { en: "enchants", jp: "魔法をかける" },
     { en: "guards", jp: "守護する" },
+    // games / play
+    { en: "rolls", jp: "転がす" },
+    { en: "shuffles", jp: "切り混ぜる" },
+    { en: "wagers", jp: "賭け金を出す" },
+    { en: "forfeits", jp: "放棄する" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -766,6 +789,11 @@ const UNIVERSAL: Bank = {
     { en: "cursed", jp: "呪われた" },
     { en: "enchanted", jp: "魔法をかけられた" },
     { en: "prophetic", jp: "予言的な" },
+    // games / play
+    { en: "playful", jp: "戯れるような" },
+    { en: "checkered", jp: "格子模様の" },
+    { en: "rigged", jp: "仕組まれた" },
+    { en: "childlike", jp: "子供のような" },
   ],
 };
 
@@ -845,6 +873,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a boarding pass", jp: "搭乗券" },
       // wind
       { en: "a gust", jp: "突風" },
+      // games
+      { en: "a die", jp: "さいころ" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -875,6 +905,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "sleepless watching", jp: "眠らぬ見張り" },
       // wind
       { en: "turbulence", jp: "乱気流" },
+      // games
+      { en: "a gamble", jp: "賭け" },
     ],
     material: [
       { en: "neon", jp: "ネオン" },
@@ -973,6 +1005,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "geometric", jp: "幾何学的な" },
       // journey
       { en: "transient", jp: "一時的な" },
+      // games
+      { en: "rigged", jp: "仕組まれた" },
     ],
   },
   // 鏡と閾 — reflection, doubling, doorways, the liminal.
@@ -1041,6 +1075,9 @@ const WORLDS: Record<string, Bank> = {
       // myth
       { en: "a doppelganger", jp: "分身" },
       { en: "a portal", jp: "扉口" },
+      // games
+      { en: "a maze", jp: "迷路" },
+      { en: "a marionette", jp: "操り人形" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -1232,6 +1269,7 @@ const WORLDS: Record<string, Bank> = {
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
+      { en: "a stalemate", jp: "手詰まり" },
       { en: "midnight", jp: "真夜中" },
       { en: "static", jp: "静電気" },
       { en: "distance", jp: "隔たり" },
@@ -1314,6 +1352,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "repeats", jp: "繰り返す" },
       { en: "interrupts", jp: "遮る" },
       { en: "ghosts", jp: "音信を絶つ" },
+      { en: "rolls", jp: "転がす" },
     ],
     adj: [
       { en: "faint", jp: "かすかな" },
@@ -1415,6 +1454,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a weathervane", jp: "風見鶏" },
       // myth
       { en: "a phoenix", jp: "不死鳥" },
+      // games
+      { en: "a marble", jp: "ビー玉" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1549,6 +1590,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "domestic", jp: "家庭的な" },
       // myth
       { en: "mythic", jp: "神話的な" },
+      // games
+      { en: "childlike", jp: "子供のような" },
     ],
   },
 };
