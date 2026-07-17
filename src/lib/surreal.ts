@@ -252,6 +252,15 @@ const UNIVERSAL: Bank = {
     { en: "a barometer", jp: "気圧計" },
     { en: "a spirit level", jp: "水準器" },
     { en: "a scale", jp: "秤" },
+    // writing / printing
+    { en: "a manuscript", jp: "原稿" },
+    { en: "a fountain pen", jp: "万年筆" },
+    { en: "a printing press", jp: "印刷機" },
+    { en: "a typewriter", jp: "タイプライター" },
+    { en: "a margin", jp: "余白" },
+    { en: "an inkwell", jp: "インク壺" },
+    { en: "a footnote", jp: "脚注" },
+    { en: "a watermark", jp: "透かし" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -367,6 +376,11 @@ const UNIVERSAL: Bank = {
     { en: "calibration", jp: "較正" },
     { en: "weight", jp: "重さ" },
     { en: "tolerance", jp: "許容誤差" },
+    // writing / printing
+    { en: "calligraphy", jp: "書道" },
+    { en: "typography", jp: "タイポグラフィ" },
+    { en: "a revision", jp: "改訂" },
+    { en: "authorship", jp: "著者性" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -448,6 +462,10 @@ const UNIVERSAL: Bank = {
     { en: "brass", jp: "真鍮" },
     { en: "lead", jp: "鉛" },
     { en: "zinc", jp: "亜鉛" },
+    // writing
+    { en: "parchment", jp: "羊皮紙" },
+    { en: "vellum", jp: "上質皮紙" },
+    { en: "toner", jp: "トナー" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -542,6 +560,8 @@ const UNIVERSAL: Bank = {
     // metal / measurement
     { en: "tips", jp: "傾く" },
     { en: "balances", jp: "釣り合う" },
+    // writing
+    { en: "blots", jp: "にじむ" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -632,6 +652,12 @@ const UNIVERSAL: Bank = {
     // metal / measurement
     { en: "weighs", jp: "重さを量る" },
     { en: "gauges", jp: "計測する" },
+    // writing
+    { en: "transcribes", jp: "書き写す" },
+    { en: "annotates", jp: "注釈をつける" },
+    { en: "drafts", jp: "下書きする" },
+    { en: "redacts", jp: "黒塗りにする" },
+    { en: "proofreads", jp: "校正する" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -824,6 +850,13 @@ const UNIVERSAL: Bank = {
     { en: "calibrated", jp: "較正された" },
     { en: "precise", jp: "精密な" },
     { en: "leaden", jp: "鉛のような" },
+    // writing
+    { en: "handwritten", jp: "手書きの" },
+    { en: "typewritten", jp: "タイプされた" },
+    { en: "illegible", jp: "判読できない" },
+    { en: "annotated", jp: "注釈のついた" },
+    { en: "watermarked", jp: "透かしの入った" },
+    { en: "inked", jp: "インクの染みた" },
   ],
 };
 
@@ -907,6 +940,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a die", jp: "さいころ" },
       // measurement
       { en: "a gauge", jp: "計器" },
+      // writing
+      { en: "a typewriter", jp: "タイプライター" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -994,6 +1029,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "amplifies", jp: "増幅する" },
       { en: "ghosts", jp: "音信を絶つ" },
       { en: "gaslights", jp: "偽りの現実を信じ込ませる" },
+      { en: "drafts", jp: "下書きする" },
     ],
     adj: [
       { en: "sleepless", jp: "眠らない" },
@@ -1115,6 +1151,9 @@ const WORLDS: Record<string, Bank> = {
       // measurement
       { en: "a spirit level", jp: "水準器" },
       { en: "a plumb line", jp: "下げ振り" },
+      // writing
+      { en: "a watermark", jp: "透かし" },
+      { en: "a footnote", jp: "脚注" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -1245,6 +1284,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "enchanted", jp: "魔法をかけられた" },
       // measurement
       { en: "calibrated", jp: "較正された" },
+      // writing
+      { en: "illegible", jp: "判読できない" },
+      { en: "watermarked", jp: "透かしの入った" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -1395,6 +1437,7 @@ const WORLDS: Record<string, Bank> = {
       { en: "interrupts", jp: "遮る" },
       { en: "ghosts", jp: "音信を絶つ" },
       { en: "rolls", jp: "転がす" },
+      { en: "redacts", jp: "黒塗りにする" },
     ],
     adj: [
       { en: "faint", jp: "かすかな" },
@@ -1500,6 +1543,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a marble", jp: "ビー玉" },
       // measurement
       { en: "a scale", jp: "秤" },
+      // writing
+      { en: "an inkwell", jp: "インク壺" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1531,6 +1576,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "nourishment", jp: "滋養" },
       // myth
       { en: "a legend", jp: "伝説" },
+      // writing
+      { en: "a revision", jp: "改訂" },
     ],
     material: [
       { en: "ash", jp: "灰" },
@@ -1559,6 +1606,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "beeswax", jp: "蜜蝋" },
       // metal
       { en: "brass", jp: "真鍮" },
+      // writing
+      { en: "parchment", jp: "羊皮紙" },
     ],
     verbIntr: [
       { en: "kindles", jp: "燃えつく" },
