@@ -242,6 +242,16 @@ const UNIVERSAL: Bank = {
     { en: "a jigsaw", jp: "ジグソーパズル" },
     { en: "a marionette", jp: "操り人形" },
     { en: "a game board", jp: "ゲーム盤" },
+    // metal / measuring instruments
+    { en: "a caliper", jp: "ノギス" },
+    { en: "a ruler", jp: "定規" },
+    { en: "a plumb line", jp: "下げ振り" },
+    { en: "a gauge", jp: "計器" },
+    { en: "a thermometer", jp: "温度計" },
+    { en: "a magnet", jp: "磁石" },
+    { en: "a barometer", jp: "気圧計" },
+    { en: "a spirit level", jp: "水準器" },
+    { en: "a scale", jp: "秤" },
   ],
   abstract: [
     { en: "forgetting", jp: "忘却" },
@@ -353,6 +363,10 @@ const UNIVERSAL: Bank = {
     { en: "a stalemate", jp: "手詰まり" },
     { en: "a rule", jp: "規則" },
     { en: "luck", jp: "運" },
+    // metal / measurement
+    { en: "calibration", jp: "較正" },
+    { en: "weight", jp: "重さ" },
+    { en: "tolerance", jp: "許容誤差" },
   ],
   material: [
     { en: "milk", jp: "乳" },
@@ -428,6 +442,12 @@ const UNIVERSAL: Bank = {
     { en: "upholstery", jp: "布張り" },
     // insects
     { en: "beeswax", jp: "蜜蝋" },
+    // metal
+    { en: "steel", jp: "鋼" },
+    { en: "tin", jp: "錫" },
+    { en: "brass", jp: "真鍮" },
+    { en: "lead", jp: "鉛" },
+    { en: "zinc", jp: "亜鉛" },
   ],
   verbIntr: [
     { en: "dissolves", jp: "溶ける" },
@@ -519,6 +539,9 @@ const UNIVERSAL: Bank = {
     // games / play
     { en: "gambles", jp: "賭ける" },
     { en: "plays", jp: "遊ぶ" },
+    // metal / measurement
+    { en: "tips", jp: "傾く" },
+    { en: "balances", jp: "釣り合う" },
   ],
   verbTrans: [
     { en: "remembers", jp: "憶えている" },
@@ -606,6 +629,9 @@ const UNIVERSAL: Bank = {
     { en: "shuffles", jp: "切り混ぜる" },
     { en: "wagers", jp: "賭け金を出す" },
     { en: "forfeits", jp: "放棄する" },
+    // metal / measurement
+    { en: "weighs", jp: "重さを量る" },
+    { en: "gauges", jp: "計測する" },
   ],
   adj: [
     { en: "luminous", jp: "発光する" },
@@ -794,6 +820,10 @@ const UNIVERSAL: Bank = {
     { en: "checkered", jp: "格子模様の" },
     { en: "rigged", jp: "仕組まれた" },
     { en: "childlike", jp: "子供のような" },
+    // metal / measurement
+    { en: "calibrated", jp: "較正された" },
+    { en: "precise", jp: "精密な" },
+    { en: "leaden", jp: "鉛のような" },
   ],
 };
 
@@ -875,6 +905,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a gust", jp: "突風" },
       // games
       { en: "a die", jp: "さいころ" },
+      // measurement
+      { en: "a gauge", jp: "計器" },
     ],
     abstract: [
       { en: "the noise", jp: "騒音" },
@@ -1007,6 +1039,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "transient", jp: "一時的な" },
       // games
       { en: "rigged", jp: "仕組まれた" },
+      // measurement
+      { en: "precise", jp: "精密な" },
     ],
   },
   // 鏡と閾 — reflection, doubling, doorways, the liminal.
@@ -1078,6 +1112,9 @@ const WORLDS: Record<string, Bank> = {
       // games
       { en: "a maze", jp: "迷路" },
       { en: "a marionette", jp: "操り人形" },
+      // measurement
+      { en: "a spirit level", jp: "水準器" },
+      { en: "a plumb line", jp: "下げ振り" },
     ],
     abstract: [
       { en: "reflection", jp: "反映" },
@@ -1206,6 +1243,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "windless", jp: "風のない" },
       // myth
       { en: "enchanted", jp: "魔法をかけられた" },
+      // measurement
+      { en: "calibrated", jp: "較正された" },
     ],
   },
   // 静寂の信号 — radio, transmission, distance, listening.
@@ -1266,6 +1305,9 @@ const WORLDS: Record<string, Bank> = {
       { en: "a sparrow", jp: "雀" },
       // myth
       { en: "an oracle", jp: "神託" },
+      // measurement
+      { en: "a barometer", jp: "気圧計" },
+      { en: "a thermometer", jp: "温度計" },
     ],
     abstract: [
       { en: "silence", jp: "静寂" },
@@ -1456,6 +1498,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "a phoenix", jp: "不死鳥" },
       // games
       { en: "a marble", jp: "ビー玉" },
+      // measurement
+      { en: "a scale", jp: "秤" },
     ],
     abstract: [
       { en: "dusk", jp: "夕暮れ" },
@@ -1513,6 +1557,8 @@ const WORLDS: Record<string, Bank> = {
       { en: "obsidian", jp: "黒曜石" },
       // insects
       { en: "beeswax", jp: "蜜蝋" },
+      // metal
+      { en: "brass", jp: "真鍮" },
     ],
     verbIntr: [
       { en: "kindles", jp: "燃えつく" },
